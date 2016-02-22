@@ -81,6 +81,7 @@ body
     /*border: 1px solid blue;*/
     text-align: center;
     color: white;
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
 }
 
 .box1_content h1
