@@ -276,7 +276,7 @@ html, body {
   position: relative;
   margin: 0 auto;
   text-align: left;
-  /*padding-top: 2.10189%;*/ /****** DELETED *******/
+  /*padding-top: 2.10189%;*/ /****** REMOVED *******/
 }
 
 .protocol .top table tr:nth-child(1) td:nth-child(1) div {
@@ -353,9 +353,21 @@ html, body {
 
 .protocol .bottom {
   position: relative;
-  float: left;
+
+  /****** ADDED *******/
+  width: 1145px;
+  margin: 0 auto;
+  margin-top: -125px;
+
+  /****** REMOVED *******/
+  /*float: left; 
   padding-left: 50px;
-  padding-top: 440px;
+  padding-top: 440px;*/
+}
+
+.protocol .bottom table
+{
+  margin: 0 auto;
 }
 
 .protocol .bottom table tr td > div {
