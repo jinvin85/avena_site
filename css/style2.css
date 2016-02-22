@@ -77,8 +77,11 @@ html, body {
   height: 25.68452%;
   background-image: url('../img/protocol.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 30% 20%;
+  /*background-size: cover;*/
+  /*background-position: 30% 20%;*/
+  background-size: 2450px; /****** CHANGED *******/
+  background-position: 44% 30%; /****** CHANGED *******/
+
 }
 
 .learn {
@@ -273,7 +276,7 @@ html, body {
   position: relative;
   margin: 0 auto;
   text-align: left;
-  padding-top: 2.10189%;
+  /*padding-top: 2.10189%;*/ /****** DELETED *******/
 }
 
 .protocol .top table tr:nth-child(1) td:nth-child(1) div {
@@ -290,7 +293,8 @@ html, body {
 }
 
 .protocol .top table tr td {
-  font-size: 200%;
+  /*font-size: 200%;*/ 
+  font-size: 150%; /****** CHANGED *******/
   font-weight: bold;
   vertical-align: middle !important;
 }
@@ -310,21 +314,41 @@ html, body {
 
 .protocol .title {
   position: relative;
-  left: 7.29167%;
-  margin-bottom: 1.33962% !important;
+  /*left: 7.29167%;
+  margin-bottom: 1.33962% !important;*/
+  width: 1145px; /****** CHANGED *******/
+  margin-top: 75px; /****** CHANGED *******/
+  margin-left: auto; /****** CHANGED *******/
+  margin-right: auto; /****** CHANGED *******/
+  margin-bottom: 35px; /****** CHANGED *******/
 }
 
 .protocol .title p {
   font-size: 384.61538%;
+  /****** ADDED *******/
+  margin-left: 4%;
+  margin-bottom: 0;
+}
+
+
+/****** ADDED *******/
+.infographic
+{
+    display: block;
+    margin: 0 auto;
+    width: 1145px;
 }
 
 .protocol .infographic img {
   max-width: 367px;
   height: auto;
   min-height: 544px;
-  margin-left: 7.29167%;
+  margin-left: 5%;
+
+  /****** CHANGED *******/
+  /*margin-left: 7.29167%; 
   float: left;
-  position: relative;
+  position: relative;*/
 }
 
 .protocol .bottom {
