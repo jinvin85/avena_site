@@ -1,0 +1,484 @@
+@font-face 
+{
+  font-family: 'Rockwell';
+  src: url('../src/fonts/Rockwell/RockwellStd.otf') format('opentype');
+}
+
+@font-face 
+{
+  font-family: 'Rockwell Light';
+  src: url('../src/fonts/Rockwell/RockwellStd-Light.otf') format('opentype');
+}
+
+/*url('../src/fonts/Rockwell/RockwellStd-Bold.otf') format('opentype'),
+       url('../src/fonts/Rockwell/RockwellStd-BoldCondensed.otf') format('opentype'),
+       url('../src/fonts/Rockwell/RockwellStd-Condensed.otf') format('opentype'),
+       url('../src/fonts/Rockwell/RockwellStd-ExtraBold.otf') format('opentype'),
+       url('../src/fonts/Rockwell/RockwellStd-Light.otf') format('opentype'),*/
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+html
+{
+  font-size: 14px;
+}
+
+body
+{
+  margin: 0 auto;
+  font-family: 'Rockwell','Rockwell Light','Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* Wrapper element */
+.wrapper
+{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-width: 952px;
+}
+
+/* Wrapper for Hero header */
+.wrap1
+{
+  flex-direction: column;
+
+  height: 73vh;
+  min-width: auto;
+  min-height: 550px;
+  
+}
+
+
+/* Hero header */
+.box1
+{
+  flex:1;
+  min-height: 550px;
+  /* turn flex item into flex wrapper */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+  /*background-size: 104%;*/
+  background-size: cover;
+
+  /* for centering inside div */
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.box1_content
+{
+    width: 820px;
+    height: 37vh;
+    /*border: 1px solid blue;*/
+    text-align: center;
+    color: white;
+}
+
+.box1_content h1
+{
+  font-size: 3.4em;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+.box1_content p:nth-of-type(1)
+{
+  font-size: 1.9em;
+  font-family: Rockwell Light;
+  /*font-weight: lighter;*/
+  /*letter-spacing: 2px;*/
+  margin: 0 auto;
+}
+
+.box1_content h2
+{
+  font-size: 2.42em;
+  letter-spacing: 1px;
+  /*font-family: Rockwell Light;*/
+  margin: 0 auto;
+}
+
+.box1_content p:nth-of-type(2)
+{
+  font-size: 1.57em;
+  font-family: Rockwell Light;
+  /*font-weight: lighter;*/
+  /*letter-spacing: 2px;*/
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+/* Learn More Button */
+.mainbtn 
+{
+  height: 60px;
+  width: 198px;
+  background-color:transparent;
+  /*-moz-border-radius:2px;*/
+  /*-webkit-border-radius:2px;*/
+  /*border-radius:2px;*/
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  margin-top: 10px;
+  
+}
+
+.mainbtn_text
+{
+  font-size: 2.3em;
+  line-height: 2.5em;
+  font-family: Rockwell;
+
+}
+
+.mainbtn:hover 
+{
+  background-color: rgba(1, 1, 1, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+}
+.mainbtn:active
+ {
+  position: relative;
+  top: 1px;
+}
+
+/* Wrapper for split button */
+.wrap2
+{
+  flex-direction: row;
+  /*background-color: red;*/
+  min-height: 202px;
+  height: 27vh;
+  width:auto;
+}
+
+
+.cover_btn
+{
+  text-decoration: none;
+  cursor: auto;
+}
+
+.cover_btn:hover,
+.cover_btn:visited,
+.cover_btn:focus,
+.cover_btn:link {
+  text-decoration: none;
+}
+
+.btn_wrapper
+{
+  font-family: Rockwell;
+  text-align: center;
+  color: white;
+  width: auto;
+  height: 27vh;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.avena_header, .oats_header
+{
+  /*flex:1;*/
+  /*font-size: 1.6em;*/
+  /*color: #361701;
+  letter-spacing: 2.5px;*/
+  /*line-height: 0.5em;*/
+  width: 345px;
+  height: 95px;
+  /*border: 1px solid black;*/
+  background-color:rgba(255, 255, 255, 0.75);
+
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  margin-bottom: 10px;
+}
+
+.header_text
+{
+  font-size: 1.5em;
+  letter-spacing: 3.5px;
+  margin-top: 10px;
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.cover_btn:hover .avena_header
+{
+  background-color: rgba(1, 1, 1, 0.2);
+
+}
+
+.cover_btn:hover .oats_header
+{
+  background-color: rgba(1, 1, 1, 0.2);
+
+}
+
+.cover_btn:hover  h1
+{
+  color: white;
+}
+
+.avena_header h1
+{
+  font-size: 2.5em;
+  color: #361701;
+  letter-spacing: 2.5px;
+  margin-top: 40px;
+}
+
+.oats_header img
+{
+  margin-top: 10px;
+  height: 75px;
+}
+
+
+
+/* Avena Foods Box */
+.box2
+{
+  flex: 1;
+  /*background-color: yellow;*/
+  background:url('../img/bg_v2_avena_web.jpg') no-repeat 30% 61%;
+  background-size: 250%;
+}
+
+/* Only Oats Box */
+.box3
+{
+  flex: 1;
+  /*background-color: green;*/
+  background:url('../img/bg_v2_oats_web.jpg') no-repeat 90% 60%;
+  background-size: cover !important;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  
+
+.box1_content
+    {
+      margin: 0 50px;
+    }
+
+    .box1_content h1
+    {
+      font-size: 2.8em;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+  .box1_content p:nth-of-type(1)
+  {
+    font-size: 1.5em;
+  }
+
+  .box1_content h2
+  {
+    font-size: 2.1em;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  .box1_content p:nth-of-type(2)
+  {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+
+  }
+
+  /* Learn More Button */
+  .mainbtn 
+  {
+    height: 50px;
+    width: 188px;
+    margin-top: 30px;
+    
+  }
+
+  .mainbtn_text
+  {
+    font-size: 2.3em;
+    line-height: 2.1em;
+  }
+  
+  .wrapper
+  {
+    min-width: 320px;
+  }
+
+  .wrap1
+  {
+    flex-direction: column;
+
+    height: 43vh;
+    min-width: auto;
+    min-height: 550px;
+  }
+
+  .box1
+  {
+
+    background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+    background-size: 270%;
+
+  }
+
+    /* Wrapper for split button */
+  .wrap2
+  {
+    flex-direction: column;
+    height: 27vh;
+    width:auto;
+  }
+
+
+ }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+  .box1_content
+  {
+    height: 36vh;
+    margin: 0 80px;
+  }
+
+  .box1_content h1
+  {
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    margin: 0 auto;
+  }
+
+  .box1_content p:nth-of-type(1)
+{
+  font-size: 1.5em;
+}
+
+.box1_content h2
+{
+  font-size: 2.1em;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.box1_content p:nth-of-type(2)
+{
+  font-size: 1.2em;
+  letter-spacing: 1px;
+
+}
+
+/* Learn More Button */
+.mainbtn 
+{
+  height: 50px;
+  width: 188px;
+  margin-top: 30px;
+  
+}
+
+.mainbtn_text
+{
+  font-size: 2.3em;
+  line-height: 2.1em;
+}
+  
+  .wrapper
+  {
+    min-width: 480px;
+  }
+
+  .wrap1
+  {
+    flex-direction: column;
+
+    height: 43vh;
+    min-width: auto;
+    min-height: 550px;
+  }
+
+  .box1
+  {
+
+    background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+    background-size: 228%;
+
+  }
+
+    /* Wrapper for split button */
+  .wrap2
+  {
+    flex-direction: column;
+    height: 27vh;
+    width:auto;
+  }
+
+
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+
+  .wrapper
+  {
+    min-width: 768px;
+  }
+
+  .wrap1
+  {
+    flex-direction: column;
+
+    height: 53vh;
+    min-width: auto;
+    min-height: 550px;
+  }
+
+  .box1
+  {
+
+    background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+    background-size: 173%;
+
+  }
+
+    /* Wrapper for split button */
+  .wrap2
+  {
+    flex-direction: column;
+    height: 27vh;
+    width:auto;
+  }
+
+ }
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){ 
+.box1_content
+}
+

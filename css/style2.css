@@ -1,0 +1,479 @@
+/* COLOR BLOCK
+White: #ffffff
+Orange: #cd480b
+Grey: #53453d;
+Brown: #7f4f21
+Black: #403124
+Menu: #4f4c4d
+*/
+
+@font-face {
+  font-family: 'Rockwell';
+  src: url('../src/fonts/Rockwell/RockwellStd.otf') format('opentype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Rockwell;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  
+  height: 4127px;
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  background-color: #ffffff;
+  height: 1.91422%;
+}
+
+.news {
+  position: relative;
+  background-color: gold;
+  height: 16.21032%;
+  background-image: url('../img/news.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.about {
+  position: relative;
+  background-color: green;
+  height: 18.22147%;
+  background-image: url('../img/about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 26%;
+}
+
+.bulk {
+  background-color: pink;
+  height: 10.61304%;
+  background-image: url('../img/bulk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.protocol {
+  position: relative;
+  background-color: grey;
+  height: 25.68452%;
+  background-image: url('../img/protocol.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 20%;
+}
+
+.learn {
+  position: relative;
+  background-color: skyblue;
+  height: 18.19724%;
+  background-image: url('../img/learn.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 38%;
+}
+
+.contact {
+  position: relative;
+  background-color: blue;
+  height: 9.15920%;
+  background-image: url('../img/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HEADER SECTION */
+.header-logo img {
+  position: absolute;
+  width: 311px;
+  height: 60px;
+  left: 5.29167%;
+  padding-top: 3px;
+}
+
+.header-menu {
+  position: absolute;
+  color: #53453d;
+  font-size: 150.69230%;
+  font-weight: bold;
+  right: 7.29167%;
+  top: 33.03797%;
+}
+
+/* NEWS SECTION */
+.news-title {
+  position: absolute;
+  top: 13.45291%;
+  left: 7.29167%;
+  right: 7.29167%;
+  width: 84.375%;
+}
+
+.news-title ul {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 369.230769%;
+  font-weight: bold;
+}
+
+.news-title ul li {
+  font-size: 54.16667%;
+  margin-left: 2.68473%;
+  font-weight: normal;
+}
+
+.news-centre {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 85.41667%;
+  height: 43.94619%;
+  position: relative;
+  top: 46.33782%;
+  color: black;
+}
+
+.news-table {
+  width: 90.85366%;
+  height: 69.38776%;
+  margin: 0 auto;
+  position: relative;
+  top: 9.5%;
+}
+
+.news table {
+  width: 81.87500%;
+  height: 72.78912%;
+}
+
+.news table, 
+.news th, 
+.news td {
+  text-align: left;
+  vertical-align: top;
+  border-style: none;
+}
+
+.news table th > div,
+.news table td > div {
+  overflow: hidden;
+  height: 50px;
+}
+
+.news table tr:nth-child(1) th:nth-child(1) {
+  font-size: 238.46154%;
+  color: #cd480b;
+}
+
+.news table tr td:nth-child(1) {
+  font-family: verdana;
+  font-size: 146.15385%;
+  color: #53453d;
+  padding-right: 45px;
+}
+
+.news table tr td:nth-child(1) .fa-circle {
+  font-size: 50%;
+  vertical-align: middle;
+}
+
+.news table tr td:nth-child(2) {
+  font-size: 161.53846%;
+  color: #cd480b;
+}
+
+.news table tr td:nth-child(2) .fa-circle {
+  font-size: 45%;
+  vertical-align: middle;
+}
+
+/* ABOUT SECTION */
+.about-us {
+  position: absolute;
+  top: 41.68085%;
+  left: 6.33333%;
+  right: 50%;
+  width: 50%;
+}
+
+.about table, th, td {
+  text-align: left;
+}
+
+.about table tr th div {
+  overflow: hidden;
+  height: 45px;
+}
+
+.about table tr td > div {
+  overflow: hidden;
+  height: 40px;
+}
+
+.about table tr th {
+  font-size: 369.23077%;
+  font-weight: normal;
+  padding-bottom: 20px;
+  vertical-align: top !important;
+}
+
+.about table tr th div {
+  width: 211px;
+  border: 1px solid white;
+  padding: 8px 20px 17px 25px;
+}
+
+.about table tr td {
+  font-size: 169.23077%;
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+
+.about table tr td a:hover,
+.about table tr td a:visited,
+.about table tr td a:link,
+.about table tr td a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about table tr td img {
+  position: relative;
+  top: 6px;
+}
+
+/* BULK SECTION */
+.bulk p {
+  position: relative;
+  color: #7f4f21;
+  font-size: 384.61538%;
+  text-align: center;
+  bottom: 20px;
+}
+
+/* PROTOCOL SECTION */
+.protocol .top table {
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 2.10189%;
+}
+
+.protocol .top table tr:nth-child(1) td:nth-child(1) div {
+  text-align: center;
+}
+
+.protocol .top table tr td:nth-child(2n+1) div {
+  padding-right: 30px;
+}
+
+.protocol .top table tr td > div {
+  overflow: hidden;
+  height: 40px;
+}
+
+.protocol .top table tr td {
+  font-size: 200%;
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+
+.protocol .top table tr td img {
+  position: relative;
+  top: 6px;
+}
+
+.protocol .top table tr td a:hover,
+.protocol .top table tr td a:visited,
+.protocol .top table tr td a:link,
+.protocol .top table tr td a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.protocol .title {
+  position: relative;
+  left: 7.29167%;
+  margin-bottom: 1.33962% !important;
+}
+
+.protocol .title p {
+  font-size: 384.61538%;
+}
+
+.protocol .infographic img {
+  max-width: 367px;
+  height: auto;
+  min-height: 544px;
+  margin-left: 7.29167%;
+  float: left;
+  position: relative;
+}
+
+.protocol .bottom {
+  position: relative;
+  float: left;
+  padding-left: 50px;
+  padding-top: 440px;
+}
+
+.protocol .bottom table tr td > div {
+  overflow: hidden;
+  height: 20px;
+}
+
+.protocol .bottom table tr td {
+  font-size: 123.07692%;
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+
+.protocol .bottom table tr td img {
+  position: relative;
+  width: 19px;
+  height: 15px;
+  top: 3px;
+}
+
+.protocol .bottom table tr td a:hover,
+.protocol .bottom table tr td a:visited,
+.protocol .bottom table tr td a:link,
+.protocol .bottom table tr td a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* LEARN SECTION */
+.learning-centre {
+  position: absolute;
+  color: #403124;
+  right: 3.54167%;
+  top: 15.17976%;
+}
+
+.learn table tr th div {
+  overflow: hidden;
+  height: 60px;
+}
+
+.learn table tr td > div {
+  overflow: hidden;
+  height: 45px;
+}
+
+.learn table tr th {
+  font-size: 369.23077%;
+  font-weight: normal;
+  padding-bottom: 20px;
+  vertical-align: top !important;
+}
+
+.learn table tr th div {
+  width: 378px;
+  border: 1px solid #403124;
+  padding: 6.5px 10px 6.5px 17px;
+}
+
+.learn table tr td {
+  font-size: 199.69231%;
+  vertical-align: middle !important;
+}
+
+.learn table tr td a:hover,
+.learn table tr td a:visited,
+.learn table tr td a:link,
+.learn table tr td a:active {
+  text-decoration: none;
+  color: #403124;
+}
+
+.learn table tr td:nth-child(1) .fa-circle {
+  font-size: 45%;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* CONTACT SECTION */
+.contact-us {
+  position: absolute;
+  color: #403124;
+  left: 7.60417%;
+  top: 19.84127%;
+}
+
+.contact table tr th div {
+  overflow: hidden;
+  height: 45px;
+}
+
+.contact table tr td > div {
+  overflow: hidden;
+  height: 45px;
+}
+
+.contact table tr th {
+  font-size: 369.23077%;
+  font-weight: normal;
+  padding-bottom: 30px;
+  vertical-align: top !important;
+}
+
+.contact table tr th div {
+  width: 280px;
+  border: 1px solid #403124;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 18px;
+}
+
+.contact table tr td {
+  font-size: 199.69231%;
+  vertical-align: middle !important;
+}
+
+.contact table tr td a:hover,
+.contact table tr td a:visited,
+.contact table tr td a:link,
+.contact table tr td a:active {
+  text-decoration: none;
+  color: #403124;
+}
+
+.contact table tr td:nth-child(1) .fa-circle,
+.contact table tr td:nth-child(2) .fa-circle{
+  font-size: 35%;
+  vertical-align: middle;
+  margin-right: 19px;
+}
+
+.contact .fa-twitter:hover {
+  color: #4099FF;
+  cursor: pointer;
+}
+
+.contact .fa-pinterest:hover {
+  color: #cb2027;
+  cursor: pointer;
+}
+
+.contact .fa-twitter,
+.contact .fa-pinterest {
+  padding-left: 5px
+}
