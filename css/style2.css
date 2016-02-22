@@ -81,8 +81,17 @@ html, body {
   /*background-position: 30% 20%;*/
   background-size: 2450px; /****** CHANGED *******/
   background-position: 44% 30%; /****** CHANGED *******/
-
 }
+
+@media only screen and (min-width: 2450px){ 
+  .protocol 
+  {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 30%;
+  }
+}
+
 
 .learn {
   position: relative;
