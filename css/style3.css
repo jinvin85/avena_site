@@ -60,10 +60,10 @@ html, body {
   position: relative;
   background-color: pink;
   height: 18.15981%;
-  background-image: url('../img/oats-products2.jpg');
+  background-image: url('../img/oats-products3.jpg');
   background-repeat: no-repeat;
-  background-size: 1200px;
-  background-position: 57% 47%;
+  background-size: 2100px;
+  background-position: 52% 50%;
 }
 
 .protocol {
@@ -82,7 +82,7 @@ html, body {
   height: 8.83777%;
   background-image: url('../img/oats-contact.jpg');
   background-repeat: no-repeat;
-  background-size: 1160px; /****** CHANGED *******/
+  background-size: 1160px; 
   background-position: 47% 53%;
 }
 
@@ -92,7 +92,7 @@ html, body {
   height: 18.52300%;
   background-image: url('../img/oats-info.jpg');
   background-repeat: no-repeat;
-  background-size: 1300px; /****** CHANGED *******/
+  background-size: 1300px; 
   background-position: 28% 58%;
 }
 
@@ -102,7 +102,7 @@ html, body {
   height: 18.03874%;
   background-image: url('../img/oats-about.jpg');
   background-repeat: no-repeat;
-  background-size: 1300px; /****** CHANGED *******/
+  background-size: 1300px;
   background-position: 90% 22%;
 }
 
@@ -558,27 +558,27 @@ html, body {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 1161px) {
+@media only screen and (min-width: 1161px) {
   .contact {
     background-size: cover;
   }
 }
 
-@media (min-width: 1201px) {
-  .products {
-    background-size: cover;
-  }
-}
-
-@media (min-width: 1301px) {
+@media only screen and (min-width: 1301px) {
   .info,
   .about {
     background-size: cover;
   }
 }
 
-@media (min-width: 1551px) {
+@media only screen and (min-width: 1551px) {
   .protocol {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 2101px) {
+  .products {
     background-size: cover;
   }
 }
