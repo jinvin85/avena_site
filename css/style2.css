@@ -32,7 +32,7 @@ html, body {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   
-  height: 4127px;
+  height: 4427px;
   width: 100%;
 }
 
@@ -45,7 +45,7 @@ html, body {
 .news {
   position: relative;
   background-color: gold;
-  height: 8.21032%;
+  height: 6.90032%;
   background-image: url('../img/news.jpg');
   background-repeat: no-repeat;
   background-size: 1800px;
@@ -55,14 +55,11 @@ html, body {
 .about {
   position: relative;
   background-color: green;
-  height: 18.22147%;
+  height: 16.49289%;
   background-image: url('../img/about.jpg');
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  /*background-position: 40% 26%;*/
-  background-size: 1235px; /****** CHANGED *******/
-  background-position: 0% 100%; /****** CHANGED *******/
-
+  background-size: 1235px; 
+  background-position: 6% 75%;
 }
 
 .bulk {
@@ -70,44 +67,38 @@ html, body {
   height: 10.61304%;
   background-image: url('../img/bulk.jpg');
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  /*background-position: 50% 50%;*/
-  background-size: 1400px; /****** CHANGED *******/
-  background-position: 45% 43%; /****** CHANGED *******/
+  background-size: 1400px; 
+  background-position: 45% 43%;
 }
 
 .protocol {
   position: relative;
   background-color: grey;
-  height: 25.68452%;
+  height: 24.98452%;
   background-image: url('../img/protocol.jpg');
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  /*background-position: 30% 20%;*/
-  background-size: 2450px; /****** CHANGED *******/
-  background-position: 44% 30%; /****** CHANGED *******/
+  background-size: 2350px; 
+  background-position: 40% 0%;
 }
 
-@media only screen and (min-width: 2450px){ 
-  .protocol 
-  {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30% 30%;
-  }
+.protocol-sub {
+  position: relative;
+  background-color: #fffbf2;
+  background-image: url('../img/infographic.jpg');
+  height: 13.98452%;
+  background-repeat: no-repeat;
+  background-size: 1330px; 
+  background-position: 50% 35%;
 }
-
 
 .learn {
   position: relative;
   background-color: skyblue;
-  height: 18.19724%;
+  height: 12.98452%;
   background-image: url('../img/learn.jpg');
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  /*background-position: 0% 38%;*/
-  background-size: 2300px; /****** CHANGED *******/
-  background-position: 94% 43%; /****** CHANGED *******/
+  background-size: 2200px; 
+  background-position: 100% 43%;
 }
 
 .contact {
@@ -116,10 +107,8 @@ html, body {
   height: 9.15920%;
   background-image: url('../img/contact.jpg');
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  background-size: 1160px; /****** CHANGED *******/
-  background-position: 47% 53%; /****** CHANGED *******/
-
+  background-size: 1160px; 
+  background-position: 47% 53%;
 }
 
 /* HEADER SECTION */
@@ -184,7 +173,7 @@ html, body {
 /* ABOUT SECTION */
 .about-us {
   position: absolute;
-  top: 41.68085%;
+  top: 43.68085%;
   left: 6.33333%;
   right: 50%;
   width: 50%;
@@ -247,96 +236,66 @@ html, body {
 }
 
 /* PROTOCOL SECTION */
-.protocol .top table {
-  position: relative;
-  margin: 0 auto;
-  text-align: left;
-  /*padding-top: 2.10189%;*/ /****** REMOVED *******/
+.protocol .top {
+  position: absolute;
+  width: 800px;
+  height: 524px;
+  left: 50%;
+  top: 50%;
+  margin: -510px 0 0 -420px;
 }
 
-.protocol .top table tr:nth-child(1) td:nth-child(1) div {
-  text-align: center;
-}
-
-.protocol .top table tr td:nth-child(2n+1) div {
-  padding-right: 30px;
-}
-
-.protocol .top table tr td > div {
-  overflow: hidden;
-  height: 40px;
-}
-
-.protocol .top table tr td {
-  /*font-size: 200%;*/ 
-  font-size: 150%; /****** CHANGED *******/
+.protocol .top ul {
+  font-size: 195%;
   font-weight: bold;
-  vertical-align: middle !important;
+  text-decoration: none;
+  list-style: none;
+  width: 770px;
+  left: 45px;
+  text-align: center;
+  vertical-align: center;
 }
 
-.protocol .top table tr td img {
-  position: relative;
-  top: 6px;
+.protocol .top ul li div:before {
+  content: "";
+  padding-left: 33px;
+  padding-bottom: 4px;
 }
 
-.protocol .top table tr td a:hover,
-.protocol .top table tr td a:visited,
-.protocol .top table tr td a:link,
-.protocol .top table tr td a:active {
+.protocol .top ul li {
+  text-align: left;
+}
+
+.protocol .top ul li .fa-circle {
+  font-size: 40%;
+  margin-right: 40px;
+}
+
+.protocol .top ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.protocol .top ul li:nth-child(1) ,
+.protocol .top ul li:nth-child(4) ,
+.protocol .top ul li:nth-child(7) ,
+.protocol .top ul li:nth-child(9) {
+  margin-top: 40px;
+}
+
+.protocol .top ul li a:hover,
+.protocol .top ul li a:visited,
+.protocol .top ul li a:link,
+.protocol .top ul li a:active {
   text-decoration: none;
   color: #ffffff;
 }
 
-.protocol .title {
-  position: relative;
-  /*left: 7.29167%;
-  margin-bottom: 1.33962% !important;*/
-  width: 1145px; /****** CHANGED *******/
-  margin-top: 75px; /****** CHANGED *******/
-  margin-left: auto; /****** CHANGED *******/
-  margin-right: auto; /****** CHANGED *******/
-  margin-bottom: 35px; /****** CHANGED *******/
-}
-
-.protocol .title p {
-  font-size: 384.61538%;
-  /****** ADDED *******/
-  margin-left: 4%;
-  margin-bottom: 0;
-}
-
-
-/****** ADDED *******/
-.infographic {
-  display: block;
-  margin: 0 auto;
-  width: 1145px;
-}
-
-.protocol .infographic img {
-  max-width: 367px;
-  height: auto;
-  min-height: 544px;
-  margin-left: 5%;
-
-  /****** CHANGED *******/
-  /*margin-left: 7.29167%; 
-  float: left;
-  position: relative;*/
-}
-
 .protocol .bottom {
   position: relative;
-
-  /****** ADDED *******/
   width: 1145px;
   margin: 0 auto;
   margin-top: -125px;
-
-  /****** REMOVED *******/
-  /*float: left; 
-  padding-left: 50px;
-  padding-top: 440px;*/
 }
 
 .protocol .bottom table
@@ -375,7 +334,7 @@ html, body {
   position: absolute;
   color: #403124;
   right: 3.54167%;
-  top: 15.17976%;
+  top: 10.17976%;
 }
 
 .learn table tr th div {
@@ -499,38 +458,40 @@ html, body {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 1161px) {
+@media only screen and (min-width: 1161px) {
   .contact {
     background-size: cover;
   }
 }
 
-@media (min-width: 1236px) {
+@media only screen and (min-width: 1236px) {
   .about {
     background-size: cover;
   }
 }
 
-@media (min-width: 1401px) {
+@media only screen and (min-width: 1401px) {
   .bulk {
     background-size: cover;
   }
 }
 
-@media (min-width: 1801px) {
+@media only screen and (min-width: 1801px) {
   .news {
     background-size: cover;
   }
 }
 
-@media (min-width: 2301px) {
+@media only screen and (min-width: 2201px) {
   .learn {
     background-size: cover;
   }
 }
 
-@media (min-width: 2351px) {
+@media only screen and (min-width: 2351px) {
   .protocol {
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: 30% 30%;
   }
 }
