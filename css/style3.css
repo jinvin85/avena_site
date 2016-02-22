@@ -60,9 +60,10 @@ html, body {
   position: relative;
   background-color: pink;
   height: 18.15981%;
-  background-image: url('../img/oats-products.jpg');
+  background-image: url('../img/oats-products2.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 1200px;
+  background-position: 57% 47%;
 }
 
 .protocol {
@@ -71,8 +72,8 @@ html, body {
   height: 18.28087%;
   background-image: url('../img/oats-protocol.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 2% 40%;
+  background-size: 1550px;
+  background-position: 7% 5%;
 }
 
 .contact {
@@ -81,7 +82,8 @@ html, body {
   height: 8.83777%;
   background-image: url('../img/oats-contact.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 1160px; /****** CHANGED *******/
+  background-position: 47% 53%;
 }
 
 .info {
@@ -90,7 +92,8 @@ html, body {
   height: 18.52300%;
   background-image: url('../img/oats-info.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 1300px; /****** CHANGED *******/
+  background-position: 28% 58%;
 }
 
 .about {
@@ -99,7 +102,8 @@ html, body {
   height: 18.03874%;
   background-image: url('../img/oats-about.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1300px; /****** CHANGED *******/
+  background-position: 90% 22%;
 }
 
 /* HEADER SECTION */
@@ -126,60 +130,66 @@ html, body {
   background-color: #93bad4;
 }
 
-.main-left {
-  width: 50%;
+.main .wrapper {
+  width: 100%;
   height: 98.83450%;
-  float: left;
-  background-image: url('http://res.cloudinary.com/duplzhwzx/image/upload/v1455865993/main-left_mnieih.jpg');
+  background-image: url('../img/main-left.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.main-left {
+  position: absolute;
+  width: 494px;
+  height: 424px;
+  left: 50%;
+  top: 50%;
+  margin: -212px 0 0 -480px;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .main-left img {
-  width: 75.83333%;
-  height: 29.58491%;
+  width: 378px;
+  height: 110px;
   margin-top: 50px;
   text-align: center;
-}
-
-.main-title p {
-  line-height: 1em;
 }
 
 .main-left .main-title p {
   color: #19191a;
   font-size: 261.53846%;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
+  line-height: 1em;
 }
 
 .main-left .main-title h4 {
   color: #d98e02;
-  font-size: 131.30769%;
-  margin-top: 20px;
+  font-size: 132.30769%;
+  margin-top: 32px;
   letter-spacing: 0.28em;
 }
 
 .main-right {
-  width: 50%;
-  height: 98.83450%;
-  float: left;
-  background-image: url('http://res.cloudinary.com/duplzhwzx/image/upload/v1455868466/ezgif.com-gif-maker_xn2snk.gif');
+  position: absolute;
+  width: 494px;
+  height: 434px;
+  left: 50%;
+  top: 50%;
+  padding: 0;
+  margin: -208px 0 0 19px;
+  background-image: url('../img/loop.gif');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 /* NEWS SECTION */
 .news-centre {
   position: absolute;
-  top: 25.2066116%;
-  left: 9.89583%;
-  letter-spacing: 0.05em;
+  width: 735px;
+  height: 132px;
+  left: 50%;
+  top: 50%;
+  margin: -66px 0 0 -357.5px;
 }
 
 .news-centre ul {
@@ -190,6 +200,7 @@ html, body {
 }
 
 .news-centre ul li {
+  font-family: verdana;
   font-size: 64.51612%;
   margin-left: 1.68473%;
   font-weight: normal;
@@ -201,23 +212,23 @@ html, body {
 
 /* PRODUCTS SECTION */
 .products-top {
-  width: 85.41667%;
-  height: 70.66667%;
+  position: absolute;
+  width: 856px;
+  height: 552px;
   margin: 0 auto;
-  margin-top: 2.00839% !important;
+  left: 50%;
+  top: 50%;
+  margin: -340px 0 0 -428px;
 }
 
 .products-top .logo {
   position: absolute;
-  width: 25.12200%;
-  height: 10.37736%;
+  width: 206px;
+  height: 65px;
 }
 
 .products-top h3 {
-  position: absolute;
-  right: 0;
-  top: 2.38734%;
-  right: 8.33333%;
+  float: right;
   color: #01306f;
   font-size: 215.384612%;
   padding-top: 7px;
@@ -228,26 +239,21 @@ html, body {
 }
 
 .products-top ul {
-  position: absolute;
+  float: left;
   color: #333333;
   font-size: 169.23077%;
-  overflow: hidden;
-  white-space: nowrap;
-  top: 10.80189%;
-  height: 1em;
-  width: 100%;
-  padding-left: 15px;
-  text-align: center;
-  letter-spacing: 0.12em;
-  left: 0;
-  right: 0;
-  margin-right: auto;
-  margin-left: auto;
+  width: 856px;
+  padding: 0;
+  margin: 0;
+  padding-top: 11px;
+  list-style: none;
 }
 
-.products-top ul li {
-  display: inline;
+.products-top .sub {
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .products-top .products-table {
   position: absolute;
@@ -255,17 +261,25 @@ html, body {
   width: 85.41667%;
 }
 
-.products-top .products-table tr {
+.products-top .products-table tr div {
   text-align: center;
   vertical-align: center;
+}
+
+.products-top .products-table tr:nth-child(even) div {
+  text-align: center;
   color: #000000;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .products-bottom {
   position: absolute;
-  right: 5.10416%;
-  padding-top: 4%;
+  width: 188px;
+  height: 144px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: 202px 0 0 270px;
 }
 
 .products-bottom img {
@@ -274,7 +288,7 @@ html, body {
 
 .products-bottom .sec {
   position: absolute;
-  right: 5.10416%;
+  right: 10%;
   padding-top: 2px;
 }
 
@@ -349,6 +363,16 @@ html, body {
 }
 
 /* CONTACT SECTION */
+.contact .center {
+  position: absolute;
+  width: 834px;
+  height: 280px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: -170px 0 0 -417px;
+}
+
 .contact .wrapper {
   background-color: rgba(219, 204, 106, 0.8);
   margin: 0 auto;
@@ -359,8 +383,10 @@ html, body {
 }
 
 .contact .left .title {
-  position: absolute;
-  left: 7.08333%;
+  width: 499px;
+  height: 70px;
+  float: left;
+  margin-bottom: 50px;
 }
 
 .contact .left .title p {
@@ -370,9 +396,7 @@ html, body {
 }
 
 .contact .left .content {
-  position: absolute;
-  left: 7.18333%;
-  top: 32.32877%;
+  float: left;
 }
 
 .contact .left .content p {
@@ -380,15 +404,18 @@ html, body {
 }
 
 .contact .right {
-  position: absolute;
-  right: 5.27083%;
-  top: 28.04110%;
-  font-size: 169.23077%;
-  line-height: 1.4em;
+  float: right;
+  font-size: 170.23077%;
+  line-height: 1.6em;
+  width: 250px;
+  height: 208px;
+  position: relative;
+  bottom: 40px;
+  font-weight: bold;
 }
 
 .contact .right ul li {
-  width: 262px;
+  width: 202px;
 }
 
 /* INFO SECTION */
@@ -402,9 +429,21 @@ html, body {
   color: black;
 }
 
-.info .wrapper .title {
+.info .gather {
   position: absolute;
-  left: 7.08333%;
+  width: 834px;
+  height: 308px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: -184px 0 0 -467px;
+}
+
+.info .wrapper .title {
+  width: 499px;
+  height: 70px;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 .info .wrapper .title p {
@@ -416,25 +455,21 @@ html, body {
 .info .wrapper .left {
   position: absolute;
   left: 5.18333%;
-  top: 32.32877%;
+  top: 36.32877%;
+  width: 396px;
+  height: 200px;
   font-size: 184.61538%;
   line-height: 1.6em;
-}
-
-.info .wrapper .left ul li {
-  width: 370px;
 }
 
 .info .wrapper .right {
   position: absolute;
-  left: 47.83333%;
-  top: 32.32877%;
+  left: 51.83333%;
+  top: 36.32877%;
+  width: 450px;
+  height: 140px;
   font-size: 184.61538%;
   line-height: 1.6em;
-}
-
-.info .wrapper .right ul li {
-  width: 439px;
 }
 
 .info .wrapper .right ul li:nth-child(3) {
@@ -448,11 +483,12 @@ html, body {
 }
 
 .info .wrapper img {
-  position: absolute;
-  right: 7.5%;
-  bottom: 7.67320%;
-  width: 21.54167%;
-  height: 18.68627%;
+  position: relative;
+  float: right;
+  right: -6%;
+  bottom: -37%;
+  width: 224px;
+  height: 64px;
 }
 
 /* ABOUT SECTION */
@@ -509,4 +545,30 @@ html, body {
 .about table tr td img {
   position: relative;
   top: 6px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1161px) {
+  .contact {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1201px) {
+  .products {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1301px) {
+  .info,
+  .about {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1551px) {
+  .protocol {
+    background-size: cover;
+  }
 }
