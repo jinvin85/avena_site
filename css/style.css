@@ -64,7 +64,7 @@ body
   display: -webkit-flex;
   display: flex;
 
-  background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+  background: url('../img/main_bg_web-min.jpg') no-repeat 50% 50%;
   /*background-size: 104%;*/
   background-size: cover;
 
@@ -350,7 +350,7 @@ body
   {
 
     background: url('../img/main_bg.jpg') no-repeat 50% 50%;
-    background-size: 270%;
+    background-size: cover; /******* CHANGED *******/
 
   }
 
@@ -369,7 +369,7 @@ body
 @media only screen and (min-width: 480px) and (max-width: 767px){ 
   .box1_content
   {
-    height: 36vh;
+    /*height: 36vh;*/  /******* REMOVED *******/
     margin: 0 80px;
   }
 
@@ -432,7 +432,7 @@ body
   {
 
     background: url('../img/main_bg.jpg') no-repeat 50% 50%;
-    background-size: 228%;
+    background-size: cover; /******* CHANGED *******/
 
   }
 
