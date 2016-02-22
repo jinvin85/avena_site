@@ -45,13 +45,11 @@ html, body {
 .news {
   position: relative;
   background-color: gold;
-  height: 16.21032%;
+  height: 8.21032%;
   background-image: url('../img/news.jpg');
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  /*background-position: center bottom;*/
-  background-size: 1800px; /****** CHANGED *******/
-  background-position: 78% 94%; /****** CHANGED *******/
+  background-size: 1800px;
+  background-position: 77% 53%; 
 }
 
 .about {
@@ -144,7 +142,7 @@ html, body {
 
 /* NEWS SECTION */
 .news .wrapper {
-  background-color: rgba(48, 21, 21, 0.3);
+  background-color: rgba(48, 21, 21, 0.42);
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -157,13 +155,13 @@ html, body {
   height: 172px;
   left: 50%;
   top: 50%;
-  margin: -260px 0 0 -460px;
+  margin: -89px 0 0 -460px;
   text-align: left;
 }
 
 .news-title {
   position: absolute;
-  top: 13.45291%;
+  top: 20.45291%;
   left: 7.29167%;
   right: 7.29167%;
   width: 85.375%;
@@ -181,88 +179,6 @@ html, body {
   font-size: 54.16667%;
   margin-left: 2.68473%;
   font-weight: normal;
-}
-
-.news-centre {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: 0 auto;
-  width: 820px;
-  height: 296px;
-  position: relative;
-  top: 140.33782%;
-  left: 20px;
-  color: black;
-}
-
-.news-table {
-  width: 90.85366%;
-  height: 69.38776%;
-  position: relative;
-  top: 12.5%;
-  margin-right: 20px;
-  margin-left: 40px;
-}
-
-.news table {
-  width: 91.17500%;
-  height: 72.78912%;
-}
-
-.news table, 
-.news th, 
-.news td {
-  text-align: left;
-  vertical-align: top;
-  border-style: none;
-}
-
-.news table th > div {
-  height: 32px;
-  vertical-align: text-bottom;
-}
-
-.news table td > div {
-  overflow: visible;
-  vertical-align: middle;
-  line-height: 1.2em;
-}
-
-.news table tr:nth-child(2) {
-  height: 53px;
-}
-
-.news table tr:nth-child(3) {
-  height: 75px;
-}
-
-.news table tr:nth-child(1) th:nth-child(1) {
-  font-size: 238.46154%;
-  color: #cd480b;
-}
-
-.news table tr td:nth-child(1) {
-  font-family: verdana;
-  font-size: 140.15385%;
-  color: #53453d;
-  padding-right: 70px;
-  width: 530px;
-}
-
-.news table tr td:nth-child(1) .fa-circle {
-  font-size: 40%;
-  vertical-align: middle;
-}
-
-.news table tr td:nth-child(2) {
-  font-size: 159.53846%;
-  font-weight: bold;
-  color: #cd480b;
-  width: 180px;
-}
-
-.news table tr td:nth-child(2) .fa-circle {
-  font-size: 40%;
-  vertical-align: middle;
 }
 
 /* ABOUT SECTION */
