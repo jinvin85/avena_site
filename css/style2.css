@@ -94,11 +94,11 @@ html, body {
 .learn {
   position: relative;
   background-color: skyblue;
-  height: 12.98452%;
+  height: 15.98452%;
   background-image: url('../img/learn.jpg');
   background-repeat: no-repeat;
-  background-size: 2200px; 
-  background-position: 100% 43%;
+  background-size: 2700px; 
+  background-position: 100% 38%;
 }
 
 .contact {
@@ -334,7 +334,7 @@ html, body {
   position: absolute;
   color: #403124;
   right: 3.54167%;
-  top: 10.17976%;
+  top: 15.17976%;
 }
 
 .learn table tr th div {
