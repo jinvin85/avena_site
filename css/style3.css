@@ -272,6 +272,16 @@ html, body {
   font-weight: bolder;
 }
 
+.products-middle {
+  position: absolute;
+  width: 210px;
+  height: 212px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: 155px 0 0 -440px;
+}
+
 .products-bottom {
   position: absolute;
   width: 188px;
