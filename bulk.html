@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Avena Foods - Bulk Ingredients</title>
 
     <!-- FontAwesome Icons -->
@@ -12,13 +11,6 @@
 
     <!-- CSS -->
     <link href="css/style2.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   
   <body>
@@ -26,13 +18,26 @@
     <div class="wrapper">
   
       <header class="header">
+        <div class="wrapper">
         <div class="header-logo">
           <a href="index.html"><img src="img/logo.png" /></a>
         </div>
 
         <div class="header-menu">
-          <div><i class="fa fa-bars"></i> MENU</div>
+          <ul>
+            <li>
+              <a class="menu" href="#"><!--<i class="fa fa-bars"></i>--> MENU</a>
+              <ul>
+                <li><a class="sub-menu" href="#about">About Us</a></li>
+                <li><a class="sub-menu" href="#bulk">Avena Bulk Ingredients</a></li>
+                <li><a class="sub-menu" href="#protocol">Avena Purity Protocol</a></li>
+                <li><a class="sub-menu" href="#learn">Learning Centre</a></li>
+                <li><a class="sub-menu" href="#contact">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
       </header>
       
       <section class="news">
@@ -55,7 +60,7 @@
 
 
 
-      <section class="about">
+      <section id="about" class="about">
         
         <div class="about-us">
           <table>
@@ -87,14 +92,14 @@
       
       
       
-      <section class="bulk">
+      <section id="bulk" class="bulk">
         <div class="bulk-ingredient">
           <p>Avena Bulk Ingredients</p> 
         </div>
       </section>
       
       
-      <section class="protocol">
+      <section id="protocol" class="protocol">
         
        <div class="top">
           <ul>
@@ -159,16 +164,23 @@
             </li>
           </ul>
 
-        </div>
+          <div class="heart">
+            
+             <table>
+              <tr>
+                <td><div><img src="img/Certified-Gluten-Free-Logo.png" /></div></td>
+                <td><div><img src="img/Kosher-Certification-Service.png" /></div></td>
+                <td><div><img src="img/Non_GMO-Project-Logo.png" /></div></td>
+              </tr>
 
-        <div class="mid">
-          
-          <img src="" />
-          <img src="" />
-          <img src="" />
-          <img src="" />
-          <img src="" />
-          <img src="" />
+              <tr>
+                <td><div><img src="img/USDA-Organic-Logo.png" /></div></td>
+                <td><div><img src="img/Canada-Organic-Logo.png" /></div></td>
+                <td><div><img src="img/Food-Safety-System-Certification-Logo.png" /></div></td>
+              </tr>
+            </table>
+
+          </div>
 
         </div>
 
@@ -179,7 +191,7 @@
       <section class="protocol-sub"></section>
       
       
-      <section class="learn">
+      <section id="learn" class="learn">
         
        <div class="learning-centre">
           <table>
@@ -208,15 +220,45 @@
               <td><div><i class="fa fa-circle"></i><a href="css/pdf/AVENA_Content_Learning_Centre_Related_Links.pdf" target="_blank"> Related Links</a></div></td>
             </tr>
             <tr>
-              <td><div><i class="fa fa-circle"></i> Questions/Request<br>for more information</div></td>
+              <td><div id="openModal1"><i class="fa fa-circle"></i><a href="#"> Questions/Request<br>for more information</a></div></td>
             </tr>
           </table>
         </div>
+
+        <!-- ================= The Modal ================= -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">×</span>
+              <h2>Request for More Information</h2>
+            </div>
+            
+            <div class="modal-body">
+
+              <form action="" method="post">
+                <input type="text" id="input-name" name="name" placeholder="Name" required>
+                <input type="email" id="input-email" name="email" placeholder="Email address" required>
+                <input type="text" id="input-subject" name="subject" placeholder="Subject">
+                <textarea name="message" type="text" id="input-message" placeholder="Message" required></textarea>
+ 
+                <input class="submit" type="submit" name="submit" value="Submit">
+              
+              </form>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- ================= End of Modal =================  -->
       
       </section>
       
       
-      <section class="contact">
+      <section id="contact" class="contact">
         
        <div class="contact-us">
           <table>
@@ -226,8 +268,9 @@
             <tr>
               <td><div><i class="fa fa-circle"></i><a href="css/pdf/AVENA_Content_Contact_Us_Contact_Details.pdf" target="_blank"> Contact details</a></div></td>
               <td><div><i class="fa fa-circle"></i> Stay connected 
-                <a href="https://twitter.com/AvenaFoods"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.pinterest.com/avenafoods/"><i class="fa fa-pinterest"></i></a>
+                <a href="https://twitter.com/AvenaFoods" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/avenafoods/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="https://www.facebook.com/pages/Avena-Foods/421255767980282" target="_blank"><i class="fa fa-facebook"></i></a>
               </div></td>
             </tr>
             <tr>
@@ -244,6 +287,8 @@
       </section>
       
     </div>
+
+    <script src="js/custom.js"></script>
 
   </body>
 </html>
