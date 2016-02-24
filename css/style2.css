@@ -85,11 +85,21 @@ html, body {
 .protocol-sub {
   position: relative;
   background-color: #fffbf2;
-  background-image: url('../img/infographic.jpg');
   height: 13.98452%;
-  background-repeat: no-repeat;
-  background-size: 1330px; 
-  background-position: 50% 35%;
+}
+
+.protocol-sub a {
+  margin: 0 auto;
+}
+
+.protocol-sub img {
+  overflow: hidden;
+  position: absolute;
+  width: 1030px;
+  height: 600px;
+  left: 50%;
+  right: 50%;
+  margin: 0px 0 0 -515px;
 }
 
 .learn {
@@ -449,7 +459,7 @@ li > .menu:before {
 }
 
 /* LEARN SECTION - MODAL */
-.modal {
+.learn .modal {
   display: none; 
   position: fixed; 
   z-index: 1; 
@@ -463,7 +473,7 @@ li > .menu:before {
   background-color: rgba(0,0,0,0.4); 
 }
 
-.modal-content {
+.learn .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -487,32 +497,32 @@ li > .menu:before {
   to {top:0; opacity:1}
 }
 
-.close {
+.learn .close {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.learn .close:hover,
+.learn .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-header {
+.learn .modal-header {
   padding: 2px 16px;
   background-color: #87CEEB;
   color: white;
 }
 
-.modal-header h2 {
+.learn .modal-header h2 {
   font-size: 250%;
   padding-left: 40px;
 }
 
-.modal-body {padding: 2px 16px;}
+.learn .modal-body {padding: 2px 16px;}
 
 .learn .modal-body form {
   max-width: 1200px;
@@ -626,6 +636,7 @@ li > .menu:before {
 .contact .fa-facebook {
   padding-left: 5px
 }
+
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1161px) {
