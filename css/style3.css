@@ -210,6 +210,68 @@ html, body {
   padding-bottom: 10px;
 }
 
+.news .social {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -110px 0 0 270px;
+}
+
+.news .social table td {
+  font-family: FontAwesome;
+  font-size: 550%;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.news .social table td a {
+  color: #ffffff;
+}
+
+.news .social table td a,
+.news .social table td a:visited,
+.news .social table td a:hover, 
+.news .social table td a:focus,
+.news .social table td a:active {
+    text-decoration: none;
+}
+
+.news .social table td .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.news .social table td .fa-twitter-square:hover {
+  color: #00aced;
+}
+
+.news .social table td .fa-pinterest-square:hover {
+  color: #cb2027;
+}
+/*.news .social table {
+  height: 100%;
+  text-align: center;
+}
+
+.news .social table tr {
+  height: 40px;
+}
+
+.news .social a {
+  text-decoration: none;
+  width: 130px;
+  height: 40px;
+}
+
+.news .social img {
+  float: left;
+  display: block;
+  width: 130px;
+  height: 40px;
+  vertical-align: bottom;
+}*/
+
 /* PRODUCTS SECTION */
 .products-top {
   position: absolute;
