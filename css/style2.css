@@ -480,6 +480,7 @@ li > .menu:before {
   padding: 0;
   border: 1px solid #888;
   width: 70%;
+  height: 55vh;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -522,7 +523,9 @@ li > .menu:before {
   padding-left: 40px;
 }
 
-.learn .modal-body {padding: 2px 16px;}
+.learn .modal-body {
+  padding: 2px 16px;
+}
 
 .learn .modal-body form {
   max-width: 50%;
@@ -545,14 +548,14 @@ li > .menu:before {
 }    
 
 .learn .modal-body textarea {
-  height: 250px;
+  height: 15vh;
 }
 
 .learn .modal-body .submit {
   color: white; 
   background-color: #87CEEB;
   cursor: pointer;
-  width: 300px;
+  width: 30%;
   margin: 30px auto;
 }
 
