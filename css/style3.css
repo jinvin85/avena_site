@@ -34,7 +34,7 @@ html, body {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   
-  height: 4130px;
+  height: 3780px;
   width: 100%;
 }
 
@@ -53,53 +53,63 @@ html, body {
 .news {
   position: relative;
   background-color: #1383b4;
-  height: 5.85956%;
+  height: 6.85956%;
 }
 
 .products {
   position: relative;
   background-color: pink;
-  height: 18.15981%;
+  height: 22.15981%;
   background-image: url('../img/oats-products3.jpg');
   background-repeat: no-repeat;
   background-size: 2100px;
-  background-position: 52% 50%;
+  background-position: 52% 45%;
 }
 
 .protocol {
   position: relative;
-  background-color: grey;
-  height: 18.28087%;
-  background-image: url('../img/oats-protocol.jpg');
-  background-repeat: no-repeat;
-  background-size: 1550px;
-  background-position: 7% 5%;
+  background-color: #fffbf2;
+  height: 15.98452%;
+}
+
+.protocol a {
+  margin: 0 auto;
+}
+
+.protocol img {
+  overflow: hidden;
+  position: absolute;
+  width: 940px;
+  height: 550px;
+  left: 50%;
+  right: 50%;
+  margin: 10px 0 0 -470px;
 }
 
 .contact {
   position: relative;
   background-color: skyblue;
-  height: 8.83777%;
-  background-image: url('../img/oats-contact.jpg');
+  height: 13.83777%;
+  background-image: url('../img/oats-contact2.jpg');
   background-repeat: no-repeat;
   background-size: 1160px; 
-  background-position: 47% 53%;
+  background-position: 57% 24%;
 }
 
 .info {
   position: relative;
   background-color: blue;
-  height: 18.52300%;
+  height: 9.26150%;
   background-image: url('../img/oats-info.jpg');
   background-repeat: no-repeat;
   background-size: 1300px; 
-  background-position: 28% 58%;
+  background-position: 28% 88%;
 }
 
 .about {
   position: relative;
   background-color: black;
-  height: 18.03874%;
+  height: 20.03874%;
   background-image: url('../img/oats-about.jpg');
   background-repeat: no-repeat;
   background-size: 1300px;
@@ -173,11 +183,11 @@ html, body {
 .main-right {
   position: absolute;
   width: 494px;
-  height: 434px;
+  height: 390px;
   left: 50%;
   top: 50%;
   padding: 0;
-  margin: -208px 0 0 19px;
+  margin: -191px 0 0 19px;
   background-image: url('../img/loop.gif');
   background-repeat: no-repeat;
 }
@@ -189,7 +199,7 @@ html, body {
   height: 132px;
   left: 50%;
   top: 50%;
-  margin: -66px 0 0 -357.5px;
+  margin: -45px 0 0 -357.5px;
 }
 
 .news-centre ul {
@@ -216,7 +226,7 @@ html, body {
   height: 40px;
   left: 50%;
   top: 50%;
-  margin: -110px 0 0 270px;
+  margin: -110px 0 0 250px;
 }
 
 .news .social table td {
@@ -249,28 +259,6 @@ html, body {
 .news .social table td .fa-pinterest-square:hover {
   color: #cb2027;
 }
-/*.news .social table {
-  height: 100%;
-  text-align: center;
-}
-
-.news .social table tr {
-  height: 40px;
-}
-
-.news .social a {
-  text-decoration: none;
-  width: 130px;
-  height: 40px;
-}
-
-.news .social img {
-  float: left;
-  display: block;
-  width: 130px;
-  height: 40px;
-  vertical-align: bottom;
-}*/
 
 /* PRODUCTS SECTION */
 .products-top {
@@ -280,31 +268,42 @@ html, body {
   margin: 0 auto;
   left: 50%;
   top: 50%;
-  margin: -340px 0 0 -428px;
+  margin: -390px 0 0 -428px;
 }
 
 .products-top .logo {
   position: absolute;
-  width: 206px;
-  height: 65px;
+  width: 170px;
+  height: 57px;
 }
 
 .products-top h3 {
-  float: right;
+  display: inline-block;
   color: #01306f;
   font-size: 215.384612%;
   padding-top: 7px;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   margin-bottom: 0;
-  margin-top: 1%;
+  margin-top: 0.5%;
+  margin-left: 20.5%;
+}
+
+.products-top .locator {
+  float: right;
+  margin-top: -35px;
+}
+
+.products-top .locator img {
+  width: 110px;
+  height: 140px;
 }
 
 .products-top ul {
   float: left;
   color: #333333;
   font-size: 169.23077%;
-  width: 856px;
+  width: 740px;
   padding: 0;
   margin: 0;
   padding-top: 11px;
@@ -316,11 +315,11 @@ html, body {
   justify-content: space-between;
 }
 
-
 .products-top .products-table {
   position: absolute;
   top: 17.33333%;
   width: 85.41667%;
+  margin-top: 40px;
 }
 
 .products-top .products-table tr div {
@@ -341,7 +340,7 @@ html, body {
   margin: 0 auto;
   left: 50%;
   top: 50%;
-  margin: 155px 0 0 -440px;
+  margin: 225px 0 0 -420px;
 }
 
 .products-bottom {
@@ -351,7 +350,7 @@ html, body {
   margin: 0 auto;
   left: 50%;
   top: 50%;
-  margin: 202px 0 0 270px;
+  margin: 280px 0 0 270px;
 }
 
 .products-bottom img {
@@ -364,130 +363,53 @@ html, body {
   padding-top: 2px;
 }
 
-/* PROTOCOL SECTION */
-.protocol .title {
-  position: relative;
-  left: 7.29167%;
-  margin-bottom: 1.33962% !important;
-}
-
-.protocol .title p {
-  font-size: 292.30769%;
-}
-
-.protocol .infographic img {
-  max-width: 367px;
-  height: auto;
-  min-height: 544px;
-  margin-left: 7.29167%;
-  float: left;
-  position: relative;
-}
-
-.protocol .infographic img {
-  max-width: 367px;
-  height: auto;
-  min-height: 544px;
-  margin-left: 7.29167%;
-  float: left;
-  position: relative;
-}
-
-.protocol .bottom {
-  position: relative;
-  float: left;
-  padding-left: 50px;
-  padding-top: 377px;
-}
-
-.protocol .bottom table tr:nth-child(n+2) {
-  line-height: 1.1em;
-}
-
-.protocol .bottom table tr td > div {
-  overflow: hidden;
-  height: auto;
-}
-
-.protocol .bottom table tr td {
-  font-size: 123.07692%;
-  font-weight: bold;
-  vertical-align: middle !important;
-}
-
-.protocol .bottom table tr:nth-child(1) {
-  font-size: 168.42%;
-}
-
-.protocol .bottom table tr td img {
-  position: relative;
-  width: 19px;
-  height: 15px;
-  top: 3px;
-}
-
-.protocol .bottom table tr td a:hover,
-.protocol .bottom table tr td a:visited,
-.protocol .bottom table tr td a:link,
-.protocol .bottom table tr td a:active {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 /* CONTACT SECTION */
 .contact .center {
-  position: absolute;
+  position: absolute;  
   width: 834px;
-  height: 280px;
+  height: 480px;
   margin: 0 auto;
   left: 50%;
   top: 50%;
-  margin: -170px 0 0 -417px;
+  margin: -240px 0 0 -487px;
 }
 
-.contact .wrapper {
-  background-color: rgba(219, 204, 106, 0.8);
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-}
-
-.contact .left .title {
-  width: 499px;
-  height: 70px;
+.contact .center .top {
+  width: 820px;
   float: left;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
-.contact .left .title p {
-  font-size: 369.23077%;
-  padding: 12px 28px 4px 28px;
-  border: 1px solid #ffffff;
+.contact .center .top p {
+  font-size: 239.23077%;
+  font-weight: bold;
+  padding: 12px 28px 4px 50px;
 }
 
-.contact .left .content {
+.contact .center .bottom {
   float: left;
-}
-
-.contact .left .content p {
-  font-size: 240%;
-}
-
-.contact .right {
-  float: right;
-  font-size: 170.23077%;
-  line-height: 1.6em;
-  width: 250px;
+  font-size: 200.23077%;
+  line-height: 1.4em;
+  width: 300px;
   height: 208px;
   position: relative;
   bottom: 40px;
+  left: 10px;
   font-weight: bold;
 }
 
-.contact .right ul li {
-  width: 202px;
+.contact .center .bottom ul .list {
+  padding-left: 20px;
+}
+
+.contact .center .bottom ul li {
+  width: 300px;
+  padding-left: 20px;
+}
+
+.contact .center .bottom ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* INFO SECTION */
@@ -495,9 +417,9 @@ html, body {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   width: 100%;
-  height: 50%;
+  height: 100%;
   position: relative;
-  top: 50%;
+  top: 0;
   color: black;
 }
 
@@ -552,6 +474,11 @@ html, body {
 .info .wrapper .right ul li span {
   position: relative;
   left: 20px;
+}
+
+.info .wrapper ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .info .wrapper img {
