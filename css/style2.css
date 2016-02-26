@@ -479,7 +479,7 @@ li > .menu:before {
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 60%;
+  width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -525,7 +525,7 @@ li > .menu:before {
 .learn .modal-body {padding: 2px 16px;}
 
 .learn .modal-body form {
-  max-width: 1200px;
+  max-width: 50%;
   text-align: center;
   margin: 20px auto;
 }
@@ -545,7 +545,7 @@ li > .menu:before {
 }    
 
 .learn .modal-body textarea {
-  height: 400px;
+  height: 250px;
 }
 
 .learn .modal-body .submit {
@@ -642,6 +642,22 @@ li > .menu:before {
 @media only screen and (min-width: 1161px) {
   .contact {
     background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .learn .modal {
+    padding-top: 5px;  
+  }
+
+  .learn .modal-body input, 
+  .learn .modal-body textarea {
+    height: 50%;
+    font-size: 100%;
+  }    
+
+  .learn .modal-body textarea {
+    height: 125px;
   }
 }
 
