@@ -19,13 +19,27 @@
     <div class="wrapper">
   
       <header class="header">
+        <div class="wrapper">
         <div class="header-logo">
           <a href="index.html"><img src="img/logo.png" /></a>
         </div>
 
         <div class="header-menu">
-          <div><i class="fa fa-bars"></i> MENU</div>
+          <ul>
+            <li>
+              <a class="menu" href="#"> MENU</a>
+              <ul>
+                <li><a class="sub-menu" href="#news">News Centre</a></li>
+                <li><a class="sub-menu" href="#products">Only Oats Products</a></li>
+                <li><a class="sub-menu" href="#protocol">Only Oats<br> Purity Protocol</a></li>
+                <li><a class="sub-menu" href="#contact">Helpful Tools</a></li>
+                <li><a class="sub-menu" href="#info">Information</a></li>
+                <li><a class="sub-menu" href="#about">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
       </header>
       
 
@@ -43,14 +57,14 @@
               </div>
             </div>
             
-            <div class="main-right"></div>
+            <a href="https://www.facebook.com/pages/Only-Oats-by-Avena-Foods/257580364269423?ref=ts" target="_blank"><div class="main-right"></div></a>
           </div>  
 
       </section>
       
       
       
-      <section class="news">
+      <section id="news" class="news">
         
         <div class="news-centre">
           <ul>News Centre
@@ -63,7 +77,7 @@
 
           <table><tr>
             <td>
-              <a href="https://www.facebook.com/pages/Avena-Foods/421255767980282?rf=670922436253665" target="_blank">
+              <a href="https://www.facebook.com/pages/Only-Oats-by-Avena-Foods/257580364269423?ref=ts" target="_blank">
               <i class="fa fa-facebook-square"></i></a>
             </td>
             <td>
@@ -80,7 +94,7 @@
       
       
       
-      <section class="products">
+      <section id="products" class="products">
         
         <div class="products-top">
           <img class="logo" src="img/oats-logo.png" />
@@ -102,7 +116,7 @@
             <li>y</li><li>&nbsp;</li><li>F</li><li>i</li><li>b</li>
             <li>e</li><li>r</li>
           </ul>
-          
+
           <table class="products-table">
             <tr>
               <td><div><a href="css/pdf/OnlyOats_Content_Products_Quick_Flakes.pdf" target="_blank"><img src="img/p1.png" /></a></div></td>
@@ -145,17 +159,19 @@
         </div>
 
         <div class="products-bottom">
-            <img src="img/cert1.png" />
-            <img class="sec" src="img/cert2.png" />
+            <a href="http://www.fssc22000.com/documents/home.xml?lang=en" target="_blank"><img src="img/Food-Safety-System-Certification-Logo.jpg" /></a>
+            <a href="http://www.nongmoproject.org/" target="_blank"><img class="second" src="img/Non_GMO-Project-Logo.jpg" /></a>
+            <a href="https://oukosher.org/" target="_blank"><img src="img/Kosher-Certification-Service.jpg" /></a>
+            <a href="http://www.gfco.org/" target="_blank"><img class="second" src="img/Certified-Gluten-Free-Logo.jpg" /></a>
         </div>
       
       </section>
       
       
-      <section class="protocol"><a href="css/pdf/OnlyOats_Content_Purity_Protocol.pdf" target="_blank"><img src="img/infographic3.jpg" /></a></section>
+      <section id="protocol" class="protocol"><a href="css/pdf/OnlyOats_Content_Purity_Protocol.pdf" target="_blank"><img src="img/infographic3.jpg" /></a></section>
       
       
-      <section class="contact">
+      <section id="contact" class="contact">
         
           <div class="center">  
             <div class="top">
@@ -167,11 +183,15 @@
               <ul>Helpful Tools:
                 <div class="list">
                 <li><a href="css/pdf/OnlyOats_Content_We're_Here_For_You.pdf" target="_blank">Store Locator</a></li>
-                <li><a href="css/pdf/OnlyOats_Content_We're_Here_For_You.pdf" target="_blank">Stay connected</a></li>
-                <li><a href="css/pdf/OnlyOats_Content_We're_Here_For_You.pdf" target="_blank">Promotions</a></li>
-                <li><a href="css/pdf/OnlyOats_Content_We're_Here_For_You.pdf" target="_blank">Recipes</a></li>
-                <li><a href="css/pdf/OnlyOats_Content_We're_Here_For_You.pdf" target="_blank">Newsletters</a></li>
-                <li><a href="css/pdf/OnlyOats_Content_We're_Here_For_You.pdf" target="_blank">Contact Us</a></li>
+                <li>Stay connected
+                    <a href="https://twitter.com/AvenaFoods" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/avenafoods/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/pages/Only-Oats-by-Avena-Foods/257580364269423?ref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>Promotions<small> - Coming soon!</small></li>
+                <li>Recipes<small> - Coming soon!</small></li>
+                <li>Newsletters<small> - Coming soon!</small></li>
+                <li><a href="css/pdf/OnlyOats_Content_About_Us_Contact_Us.pdf" target="_blank">Contact Us</a></li>
                 </div>
               </ul>
             </div>
@@ -180,7 +200,7 @@
       </section>
       
       
-      <section class="info">
+      <section id="info" class="info">
         
        <div class="wrapper">
           
@@ -203,7 +223,7 @@
             <ul>
               <li><a href="css/pdf/OnlyOats_Content_Helpful_Information_FAQ.pdf" target="_blank"><span>Frequently Asked Questions (FAQs)</span></a></li>
               <li><a href="css/pdf/OnlyOats_Content_Helpful_Information_Related_Links.pdf" target="_blank"><span>Related Links</span></a></li>
-              <li><span>Questions/request for more<br>information</span></li>
+              <li><span id="openModal" target="#myModal"><a href="#">Questions/request for more<br>information</a></span></li>
             </ul>
           </div>
           
@@ -212,10 +232,40 @@
           </div>
 
        </div>
+
+       <!-- ================= The Modal ================= -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">×</span>
+              <h2>Request for More Information</h2>
+            </div>
+            
+            <div class="modal-body">
+
+              <form action="" method="post">
+                <input type="text" id="input-name" name="name" placeholder="Name" required>
+                <input type="email" id="input-email" name="email" placeholder="Email address" required>
+                <input type="text" id="input-subject" name="subject" placeholder="Subject">
+                <textarea name="message" type="text" id="input-message" placeholder="Message" required></textarea>
+ 
+                <input class="submit" type="submit" name="submit" value="Submit">
+              
+              </form>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- ================= End of Modal =================  -->
       
       </section>
       
-      <section class="about">
+      <section id="about" class="about">
         
         <div class="about-us">
           <table>
@@ -247,8 +297,7 @@
       
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/custom.js"></script>
 
   </body>
 </html>
