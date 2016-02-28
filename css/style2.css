@@ -22,6 +22,75 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Header */
+.header
+{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 1500;
+
+}
+
+.header-logo
+{
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 11.5px;
+}
+
+.header-menu {
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: bold;
+  right: 60px;
+  top: 8px;
+  word-wrap: break-word;
+}
+
+.menu-btn {
+    font-family: Rockwell;
+    background: white;
+    color: #53453d;
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1em;
+    top: 68px;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {background-color: #f1f1f1}
+
+.header-menu:hover .menu-content {
+    display: block;
+}
+
+.menu-btn:before 
+{
+  font-family: FontAwesome;
+  content: '\f0c9';
+  margin-right: 5px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -36,19 +105,21 @@ html, body {
   width: 100%;
 }
 
-.header {
+/*.header {
   position: relative;
   background-color: #ffffff;
   height: 1.91422%;
-}
+}*/
 
 .news {
   position: relative;
-  background-color: gold;
-  height: 6.90032%;
+  margin-top: 80px;
+  /*background-color: gold;*/
+  /*height: 6.90032%;*/
+  height: 305px;
   background-image: url('../img/news.jpg');
   background-repeat: no-repeat;
-  background-size: 1800px;
+  /*background-size: 1800px;*/ background-size: cover;
   background-position: 77% 53%;
   z-index: -1; 
 }
@@ -56,56 +127,70 @@ html, body {
 .about {
   position: relative;
   background-color: green;
-  height: 16.49289%;
+  /*height: 16.49289%;*/ height: 730px;
   background-image: url('../img/about.jpg');
   background-repeat: no-repeat;
-  background-size: 1235px; 
-  background-position: 6% 75%;
+  /*background-size: 1235px; */ background-size: cover;
+  /*background-position: 6% 75%;*/ background-position: 6% 45%;
 }
 
 .bulk {
   background-color: pink;
-  height: 10.61304%;
+  /*height: 10.61304%;*/ height: 520px;
   background-image: url('../img/bulk.jpg');
   background-repeat: no-repeat;
-  background-size: 1400px; 
-  background-position: 45% 43%;
+  /*background-size: 1400px; */ background-size: cover;
+  /*background-position: 45% 43%;*/ background-position: 45% 45%;
 }
 
 .protocol {
   position: relative;
   background-color: grey;
-  height: 24.98452%;
+  /*height: 24.98452%;*/ height: 1092.3px;
   background-image: url('../img/protocol.jpg');
   background-repeat: no-repeat;
   background-size: 2350px; 
   background-position: 40% 0%;
 }
 
+  /* for protocol bg fix */
+@media only screen and (min-width: 2350px){ 
+  /* Enter code here */
+  .protocol
+  {
+    background-size: 2680px;
+    background-position: 1% 10%;
+  }
+
+}
+
 .protocol-sub {
   position: relative;
   background-color: #fffbf2;
-  height: 13.98452%;
+  /*height: 13.98452%;*/ height: 693.5px;
 }
 
 .protocol-sub a {
-  margin: 0 auto;
+    display: block;
+    width: 1030px;
+    height: 600px;
+    margin: 40px auto;
 }
 
 .protocol-sub img {
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: absolute;
   width: 1030px;
-  height: 600px;
-  left: 50%;
+  height: 613.5px;
+  /*left: 50%;
   right: 50%;
-  margin: 0px 0 0 -515px;
+  margin: 0px 0 0 -515px;*/
 }
 
 .learn {
   position: relative;
   background-color: skyblue;
-  height: 15.98452%;
+  /*height: 15.98452%;*/ height: 687.6px;
   background-image: url('../img/learn.jpg');
   background-repeat: no-repeat;
   background-size: 2700px; 
@@ -115,15 +200,15 @@ html, body {
 .contact {
   position: relative;
   background-color: blue;
-  height: 9.15920%;
+  /*height: 9.15920%;*/ height: 396.25px;
   background-image: url('../img/contact.jpg');
   background-repeat: no-repeat;
-  background-size: 1160px; 
+  /*background-size: 1160px; */ background-size: cover;
   background-position: 47% 53%;
 }
 
 /* HEADER SECTION */
-.header-logo img {
+/*.header-logo img {
   position: absolute;
   width: 311px;
   height: 60px;
@@ -197,7 +282,7 @@ html, body {
 li > .menu:before {
   font-family: FontAwesome;
   content: '\f0c9';
-}
+}*/
 
 /* NEWS SECTION */
 .news .wrapper {
@@ -231,6 +316,12 @@ li > .menu:before {
   margin: 0 0;
   font-size: 369.230769%;
   font-weight: bold;
+}
+
+.news-title ul h1
+{
+  font-size: 1em;
+  margin: 0;
 }
 
 .news-title ul li {
@@ -307,12 +398,12 @@ li > .menu:before {
 
 /* PROTOCOL SECTION */
 .protocol .top {
-  position: absolute;
+  /*position: absolute;*/ position: relative;
   width: 800px;
   height: 524px;
-  left: 50%;
-  top: 50%;
-  margin: -550px 0 0 -420px;
+  /*left: 50%;
+  top: 50%;*/
+  /*margin: -550px 0 0 -420px;*/ margin: 0 auto;
 }
 
 .protocol .top ul {
@@ -637,7 +728,7 @@ li > .menu:before {
 
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 1161px) {
+/*@media only screen and (min-width: 1161px) {
   .contact {
     background-size: cover;
   }
@@ -689,4 +780,165 @@ li > .menu:before {
     background-size: cover;
     background-position: 30% 30%;
   }
+}*/
+
+
+  /* iPhone 6 Plus and smaller */
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  /* Enter code here */
+
+  .header
+  {
+    height: 50px;
+    background: red;
+  }
+
+  .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* news section */
+
+  .news
+  {
+    margin-top: 50px;
+    background-position: 50% 100%;
+  }
+
+  .news .news-gather {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+}
+
+  .news-title
+  {
+    font-size: .6em;
+    top: 0;
+  }
+
+  .news-title ul
+  {
+    text-align: center;
+  }
+
+  .news-title ul h1
+  {
+    font-size: 0.9em;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .news-title ul li 
+  {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  /* about us section */
+
+  .about
+  {
+    height: 430px;
+    background-size: 850px;
+    background-position: 0% 95%;
+  }
+  .about-us
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .about table tr th div
+  {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 2em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  /* bulk section */
+
+  .bulk
+  {
+    height: 240px;
+    background-size: 450px;
+    background-position: 50% 0%;
+  }
+
+  .bulk p
+  {
+    font-size: 2.5em;
+    font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 15px;
+  }
+
+
+ }
+
+  /* Regular iPad and iPad mini or other tablets */
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+  /* Enter code here */
+  .header
+  {
+    background: yellow;
+  }
+
+
+ }
+
+ /* Laptops and small browsers */
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+  /* Enter code here */
+  .header
+  {
+    background: blue
+  }
+
+ }
+
+  /* Widescreens */
+@media only screen and (min-width: 992px){ 
+  /* Enter code here */
+  .header
+  {
+    background: black;
+  }
+
 }
