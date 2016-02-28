@@ -101,7 +101,7 @@ html, body {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   
-  height: 4427px;
+  /*height: 4427px;*/
   width: 100%;
 }
 
@@ -207,82 +207,6 @@ html, body {
   background-position: 47% 53%;
 }
 
-/* HEADER SECTION */
-/*.header-logo img {
-  position: absolute;
-  width: 311px;
-  height: 60px;
-  left: 5.29167%;
-  padding-top: 3px;
-}
-
-.header-menu {
-  position: absolute;
-  font-size: 150.69230%;
-  font-weight: bold;
-  right: 7.29167%;
-  top: 33.03797%;
-  word-wrap: break-word;
-}
-
-.header-menu ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-}
-
-.header-menu ul li {
-  display: inline-block;
-}
-
-.header-menu ul li a {
-  display: block;
-  padding: 0 10px;
-  color: #53453d;
-  text-decoration: none;
-}
-
-.header-menu .menu {
-  height: 60px;
-}
-
-.header-menu ul ul {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: -48px;
-  text-align: center;
-  z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.header-menu ul li:hover > ul {
-  display: inherit;
-  transition: 0.5s;
-}
-
-.header-menu ul ul li {
-  width: 180px;
-  padding: 7px 0;
-  float: none;
-  display: list-item;
-  position: relative;
-}
-
-.header-menu ul ul li:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-  transition: 0.5s;
-}
-
-.header-menu ul ul li a:hover {
-  color: #3a302a;
-}
-
-li > .menu:before {
-  font-family: FontAwesome;
-  content: '\f0c9';
-}*/
 
 /* NEWS SECTION */
 .news .wrapper {
@@ -714,60 +638,6 @@ li > .menu:before {
 }
 
 
-/* MEDIA QUERIES */
-/*@media only screen and (min-width: 1161px) {
-  .contact {
-    background-size: cover;
-  }
-}
-
-@media only screen and (max-width: 1350px) {
-  .learn .modal {
-    padding-top: 5px;  
-  }
-
-  .learn .modal-body input, 
-  .learn .modal-body textarea {
-    height: 50%;
-    font-size: 100%;
-  }    
-
-  .learn .modal-body textarea {
-    height: 125px;
-  }
-}
-
-@media only screen and (min-width: 1236px) {
-  .about {
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 1401px) {
-  .bulk {
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 1801px) {
-  .news {
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 2201px) {
-  .learn {
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 2351px) {
-  .protocol {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30% 30%;
-  }
-}*/
 
 
   /* iPhone 6 Plus and smaller */
@@ -777,7 +647,6 @@ li > .menu:before {
   .header
   {
     height: 50px;
-    background: red;
   }
 
   .header-logo
@@ -851,13 +720,13 @@ li > .menu:before {
 
   /* about us section */
 
-  .about
+  .about, .learn, .contact
   {
     height: 430px;
     background-size: 850px;
     background-position: 0% 95%;
   }
-  .about-us
+  .about-us, .learning-centre, .contact-us
   {
     position: relative;
     top: 0;
@@ -882,8 +751,8 @@ li > .menu:before {
   .bulk
   {
     height: 240px;
-    background-size: 450px;
-    background-position: 50% 0%;
+    background-size: 480px;
+    background-position: 50% 23%;
   }
 
   .bulk p
@@ -896,6 +765,155 @@ li > .menu:before {
     top: 15px;
   }
 
+  /* protocol section */
+
+  .protocol
+  {
+    height: 550px;
+    background-size: cover;
+    background-position: 0% 50%;
+  }
+
+  .protocol .top
+  {
+    width: 75%;
+  }
+
+  .protocol .top ul
+  {
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    margin-left: 15px;
+  }
+  .protocol .top ul li .fa-circle
+  {
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .protocol .top ul li:nth-child(1), .protocol .top ul li:nth-child(4), .protocol .top ul li:nth-child(7), .protocol .top ul li:nth-child(9)
+  {
+    margin-top: 15px;
+  }
+
+  .protocol .top ul li div:before
+  {
+    padding-left: 0px;
+  }
+
+  .protocol .heart
+  {
+    display: none;
+  }
+
+  /* protocol sub section */
+  .protocol-sub
+  {
+    height: 285.7px;
+  }
+  .protocol-sub a
+  {
+    width: 90%;
+    height: 90%;
+    margin:10px auto;
+  }
+
+  .protocol-sub img
+  {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* learning section */
+
+  .learn
+  {
+    height: 550px;
+  }
+
+  .learn table tr th, .contact table tr th
+  {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .learn table tr th div, .contact table tr th div
+  {
+    width: 90%;
+    line-height: 2.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .learn table tr td > div
+  {
+    height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .learn table tr:nth-child(7) td div
+  {
+    height: 45px;
+
+  }
+
+  .learn table tr:nth-child(6) td div
+  {
+    margin-bottom: 0;    
+  }
+
+  .learning-centre table, .contact-us table
+  {
+    margin: 0 auto;
+  }
+
+  /* contact us section */
+  .contact table tr th div
+  {
+    line-height: 2em;
+    width: 100%
+  }
+
+  .contact table tr td > div
+  {
+    width: 100%;
+  }
+
+  .contact-us table
+  {
+        width:100%;
+  }
+    
+   .contact-us td{
+        display:block;
+        width:100%;
+    }
+    
+  .contact-us  tr{
+        display:block;
+        /*margin-bottom:30px;*/
+    }
+
+    .contact table tr td:nth-child(1)
+    {
+      width: 100%;
+    }
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
+
+
 
  }
 
@@ -904,7 +922,279 @@ li > .menu:before {
   /* Enter code here */
   .header
   {
-    background: yellow;
+    height: 50px;
+  }
+
+    .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* news section */
+
+  .news
+  {
+    margin-top: 50px;
+    background-position: 50% 50%;
+  }
+
+  .news .news-gather {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+}
+
+  .news-title
+  {
+    font-size: .6em;
+    top: 0;
+  }
+
+  .news-title ul
+  {
+    text-align: center;
+  }
+
+  .news-title ul h1
+  {
+    font-size: 0.9em;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .news-title ul li 
+  {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  /* about us section */
+
+  .about, .learn, .contact
+  {
+    height: 430px;
+    background-size: 850px;
+    background-position: 0% 95%;
+  }
+  .about-us, .learning-centre, .contact-us
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .about table, th, td
+  {
+    width: 100%
+  }
+
+  .about table tr th div
+  {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 2em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .about table tr td > div
+  {
+    margin: 0 45px;
+  }
+
+  /* bulk section */
+
+  .bulk
+  {
+    height: 240px;
+    background-size: cover;
+    background-position: 50% 40%;
+  }
+
+  .bulk p
+  {
+    font-size: 2.5em;
+    font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 15px;
+  }
+
+  /* protocol section */
+
+  .protocol
+  {
+    height: 340px;
+    background-size: 1000px;
+    background-position: 20% 50%;
+  }
+
+  .protocol .top
+  {
+    width: 75%;
+    height: 340px;
+  }
+
+  .protocol .top ul
+  {
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    margin-left: 15px;
+  }
+  .protocol .top ul li .fa-circle
+  {
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .protocol .top ul li:nth-child(1), .protocol .top ul li:nth-child(4), .protocol .top ul li:nth-child(7), .protocol .top ul li:nth-child(9)
+  {
+    margin-top: 15px;
+  }
+
+  .protocol .top ul li div:before
+  {
+    padding-left: 0px;
+  }
+
+  .protocol .heart
+  {
+    display: none;
+  }
+
+  /* protocol sub section */
+  .protocol-sub
+  {
+    height: 285.7px;
+  }
+  .protocol-sub a
+  {
+    width: 70%;
+    height: 90%;
+    margin:10px auto;
+  }
+
+  .protocol-sub img
+  {
+    width: 70%;
+    height: 90%;
+  }
+
+  /* learning section */
+
+  .learn
+  {
+    height: 550px;
+  }
+
+  .learn table tr th, .contact table tr th
+  {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .learn table tr th div, .contact table tr th div
+  {
+    width: 90%;
+    line-height: 2.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .learn table tr td > div
+  {
+    height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .learn table tr:nth-child(7) td div
+  {
+    height: 45px;
+
+  }
+
+  .learn table tr:nth-child(6) td div
+  {
+    margin-bottom: 0;    
+  }
+
+  .learning-centre table, .contact-us table
+  {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* contact us section */
+  .contact table tr th div
+  {
+    line-height: 2em;
+    width: 100%
+  }
+
+  .contact table tr td > div
+  {
+    width: 100%;
+  }
+
+  .contact-us table
+  {
+        width:100%;
+  }
+    
+   .contact-us td{
+        display:block;
+        width:100%;
+    }
+    
+  .contact-us  tr{
+        display:block;
+        /*margin-bottom:30px;*/
+    }
+
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
   }
 
 
@@ -915,17 +1205,287 @@ li > .menu:before {
   /* Enter code here */
   .header
   {
-    background: blue
+    height: 50px;
   }
+
+      .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* news section */
+
+  .news
+  {
+    margin-top: 50px;
+    background-position: 50% 50%;
+  }
+
+  .news .news-gather {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+}
+
+  .news-title
+  {
+    font-size: .6em;
+    top: 0;
+  }
+
+  .news-title ul
+  {
+    text-align: center;
+  }
+
+  .news-title ul h1
+  {
+    font-size: 0.9em;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .news-title ul li 
+  {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  /* about us section */
+
+  .about, .learn, .contact
+  {
+    height: 430px;
+    background-size: cover;
+    background-position: 0% 50%;
+  }
+  .about-us, .learning-centre, .contact-us
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .about table, th, td
+  {
+    width: 100%
+  }
+
+  .about table tr th div
+  {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 2em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .about table tr td > div
+  {
+    margin: 0 45px;
+  }
+
+  /* bulk section */
+
+  .bulk
+  {
+    height: 240px;
+    background-size: cover;
+    background-position: 50% 40%;
+  }
+
+  .bulk p
+  {
+    font-size: 2.5em;
+    font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 15px;
+  }
+
+  /* protocol section */
+
+  .protocol
+  {
+    height: 340px;
+    background-size: 1000px;
+    background-position: 20% 50%;
+  }
+
+  .protocol .top
+  {
+    width: 75%;
+    height: 340px;
+  }
+
+  .protocol .top ul
+  {
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    margin-left: 15px;
+  }
+  .protocol .top ul li .fa-circle
+  {
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .protocol .top ul li:nth-child(1), .protocol .top ul li:nth-child(4), .protocol .top ul li:nth-child(7), .protocol .top ul li:nth-child(9)
+  {
+    margin-top: 15px;
+  }
+
+  .protocol .top ul li div:before
+  {
+    padding-left: 0px;
+  }
+
+  .protocol .heart
+  {
+    display: none;
+  }
+
+  /* protocol sub section */
+  .protocol-sub
+  {
+    height: 285.7px;
+  }
+  .protocol-sub a
+  {
+    width: 60%;
+    height: 90%;
+    margin:10px auto;
+  }
+
+  .protocol-sub img
+  {
+    width: 60%;
+    height: 90%;
+  }
+
+  /* learning section */
+
+  .learn
+  {
+    height: 550px;
+  }
+
+  .learn table tr th, .contact table tr th
+  {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .learn table tr th div, .contact table tr th div
+  {
+    width: 90%;
+    line-height: 2.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .learn table tr td > div
+  {
+    height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .learn table tr:nth-child(7) td div
+  {
+    height: 45px;
+
+  }
+
+  .learn table tr:nth-child(6) td div
+  {
+    margin-bottom: 0;    
+  }
+
+  .learning-centre table, .contact-us table
+  {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* contact us section */
+  .contact table tr th div
+  {
+    line-height: 2em;
+    width: 100%
+  }
+
+  .contact table tr td > div
+  {
+    width: 100%;
+  }
+
+  .contact-us table
+  {
+        width:100%;
+  }
+    
+   .contact-us td{
+        display:block;
+        width:100%;
+    }
+    
+  .contact-us  tr{
+        display:block;
+        /*margin-bottom:30px;*/
+    }
+
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
+
+
 
  }
 
   /* Widescreens */
 @media only screen and (min-width: 992px){ 
   /* Enter code here */
-  .header
-  {
-    background: black;
-  }
 
 }
