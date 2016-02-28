@@ -456,7 +456,7 @@ li > .menu:before {
   position: absolute;
   width: 300px;
   top: 128%;
-  right: 57%;
+  right: 65%;
 }
 
 .protocol .heart table td {
@@ -466,29 +466,8 @@ li > .menu:before {
 }
 
 .protocol .heart table tr img {
-  width: 80px;
-  height: 80px;
-}
-
-.protocol .heart table tr:nth-child(1) td:nth-child(1) img {
-  padding-bottom: 20px;
-}
-
-.protocol .heart table tr:nth-child(1) td:nth-child(2) img {
-  height: 100px;
-  width: 100px;
-}
-
-.protocol .heart table tr:nth-child(1) td:nth-child(3) img {
-  height: 70px;
-  width: 70px;
-  text-align: left;
-}
-
-.protocol .heart table tr:nth-child(2) td:nth-child(3) img {
-  height: 110px;
-  width: 110px;
-  text-align: left;
+  width: 125;
+  height: 125px;
 }
 
 /* LEARN SECTION */
@@ -507,6 +486,10 @@ li > .menu:before {
 .learn table tr td > div {
   overflow: visible;
   height: 40px;
+}
+
+.learn table tr:nth-child(6) td div {
+  height: 65px;
 }
 
 .learn table tr th {
@@ -703,6 +686,10 @@ li > .menu:before {
   font-size: 35%;
   vertical-align: middle;
   margin-right: 19px;
+}
+
+.contact table tr:nth-child(4) td div .soon {
+  margin-left: 30px;
 }
 
 .contact .fa-twitter:hover {
