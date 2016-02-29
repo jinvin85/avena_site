@@ -112,15 +112,8 @@ html, body {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   
-  /*height: 4427px;*/
   width: 100%;
 }
-
-/*.header {
-  position: relative;
-  background-color: #ffffff;
-  height: 1.91422%;
-}*/
 
 .news {
   position: relative;
@@ -150,7 +143,7 @@ html, body {
   /*height: 10.61304%;*/ height: 520px;
   background-image: url('../img/bulk.jpg');
   background-repeat: no-repeat;
-  /*background-size: 1400px; */ background-size: cover;
+  /*background-size: 1400px; */ background-size: 100%;
   /*background-position: 45% 43%;*/ background-position: 45% 45%;
 }
 
@@ -160,8 +153,8 @@ html, body {
   /*height: 24.98452%;*/ height: 1092.3px;
   background-image: url('../img/protocol.jpg');
   background-repeat: no-repeat;
-  background-size: 2350px; 
-  background-position: 40% 0%;
+  background-size: 2680px; 
+  background-position: 1% 10%;
 }
 
   /* for protocol bg fix */
@@ -169,7 +162,7 @@ html, body {
   /* Enter code here */
   .protocol
   {
-    background-size: 2680px;
+    background-size: 3500px;
     background-position: 1% 10%;
   }
 
@@ -204,7 +197,7 @@ html, body {
   /*height: 15.98452%;*/ height: 687.6px;
   background-image: url('../img/learn.jpg');
   background-repeat: no-repeat;
-  background-size: 2700px; 
+  background-size: cover; 
   background-position: 100% 38%;
 }
 
@@ -1498,5 +1491,11 @@ html, body {
   /* Widescreens */
 @media only screen and (min-width: 992px){ 
   /* Enter code here */
+  .learn table tr:nth-child(7) td div {
+    margin-bottom: 27px;
+  }
 
+  .contact table tr:nth-child(2) td:nth-child(2) div {
+    width: 400px;
+  }
 }
