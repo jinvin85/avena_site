@@ -1,12 +1,16 @@
 @font-face 
 {
   font-family: 'Rockwell';
+  font-style: normal;
+  font-weight: normal;
   src: url('../src/fonts/Rockwell/RockwellStd.otf') format('opentype');
 }
 
 @font-face 
 {
   font-family: 'Rockwell Light';
+  font-style: lighter;
+  font-weight: lighter;
   src: url('../src/fonts/Rockwell/RockwellStd-Light.otf') format('opentype');
 }
 
@@ -352,6 +356,7 @@ body
   /*background-color: green;*/
   background:url('../img/bg_v2_oats_web.jpg') no-repeat 90% 60%;
   background-size: cover !important;
+  background-position: 0% 0%;
 }
 
 
@@ -458,7 +463,7 @@ body
   .box1
   {
 
-    background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+    background: url('../img/main_bg_web-min.jpg') no-repeat 50% 50%;
     background-size: cover; /******* CHANGED *******/
 
   }
@@ -542,7 +547,7 @@ body
   .box1
   {
 
-    background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+    background: url('../img/main_bg_web-min.jpg') no-repeat 50% 50%;
     background-size: cover; /******* CHANGED *******/
 
   }
@@ -578,7 +583,7 @@ body
   .box1
   {
 
-    background: url('../img/main_bg.jpg') no-repeat 50% 50%;
+    background: url('../img/main_bg_web-min.jpg') no-repeat 50% 50%;
     background-size: cover;
 
   }
