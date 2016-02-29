@@ -7,9 +7,20 @@ Black: #403124
 Menu: #4f4c4d
 */
 
-@font-face {
+@font-face 
+{
   font-family: 'Rockwell';
+  font-style: normal;
+  font-weight: normal;
   src: url('../src/fonts/Rockwell/RockwellStd.otf') format('opentype');
+}
+
+@font-face 
+{
+  font-family: 'Rockwell Light';
+  font-style: lighter;
+  font-weight: lighter;
+  src: url('../src/fonts/Rockwell/RockwellStd-Light.otf') format('opentype');
 }
 
 html, body {
