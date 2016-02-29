@@ -153,12 +153,12 @@ html, body {
   /*height: 24.98452%;*/ height: 1092.3px;
   background-image: url('../img/protocol.jpg');
   background-repeat: no-repeat;
-  background-size: 2680px; 
-  background-position: 1% 10%;
+  background-size: 2350px; 
+  background-position: 35% 0%;
 }
 
   /* for protocol bg fix */
-@media only screen and (min-width: 2350px){ 
+@media only screen and (min-width: 2000px){ 
   /* Enter code here */
   .protocol
   {
@@ -641,6 +641,15 @@ html, body {
   padding-left: 5px
 }
 
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
 
 
 
@@ -1107,15 +1116,15 @@ html, body {
   }
   .protocol-sub a
   {
-    width: 70%;
-    height: 90%;
+    width:443.4px;
+    height: 255px;
     margin:10px auto;
   }
 
   .protocol-sub img
   {
-    width: 70%;
-    height: 90%;
+    width:443.4px;
+    height: 255px;
   }
 
   /* learning section */
@@ -1257,7 +1266,7 @@ html, body {
 
   .news-title
   {
-    font-size: .6em;
+    font-size: .7em;
     top: 0;
   }
 
@@ -1386,19 +1395,19 @@ html, body {
   /* protocol sub section */
   .protocol-sub
   {
-    height: 285.7px;
+    height: 405.7px;
   }
   .protocol-sub a
   {
-    width: 60%;
-    height: 90%;
+    width: 585.5px;
+    height: 383.1px;
     margin:10px auto;
   }
 
   .protocol-sub img
   {
-    width: 60%;
-    height: 90%;
+    width: 585.5px;
+    height: 383.1px;
   }
 
   /* learning section */

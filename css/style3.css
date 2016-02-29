@@ -38,16 +38,17 @@ html, body {
   width: 100%;
 }
 
-.header {
+/*.header {
   position: relative;
   background-color: #ffffff;
   height: 1.91283%;
-}
+}*/
 
 .main {
   position: relative;
   background-color: #93bad4;
   height: 10.38741%;
+  margin-top: 70px;
 }
 
 .news {
@@ -117,7 +118,7 @@ html, body {
 }
 
 /* HEADER SECTION */
-.header-logo img {
+/*.header-logo img {
   position: absolute;
   width: 311px;
   height: 60px;
@@ -192,6 +193,75 @@ html, body {
 li > .menu:before {
   font-family: FontAwesome;
   content: '\f0c9';
+}*/
+
+/* Header */
+.header
+{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 1500;
+
+}
+
+.header-logo
+{
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 11.5px;
+}
+
+.header-menu {
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: bold;
+  right: 60px;
+  top: 8px;
+  word-wrap: break-word;
+}
+
+.menu-btn {
+    font-family: Rockwell;
+    background: white;
+    color: #53453d;
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1em;
+    top: 68px;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {background-color: #f1f1f1}
+
+.header-menu:hover .menu-content {
+    display: block;
+}
+
+.menu-btn:before 
+{
+  font-family: FontAwesome;
+  content: '\f0c9';
+  margin-right: 5px;
 }
 
 /* MAIN SECTION */
@@ -771,7 +841,7 @@ li > .menu:before {
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
   
 
-    .header-logo img {
+    /*.header-logo img {
       position: absolute;
       width: 150px;
       height: 40px;
@@ -793,9 +863,46 @@ li > .menu:before {
       top: 20px;
       font-size: 100%;
       text-align: left;
-    }
+    }*/
+
+      .header
+  {
+    height: 50px;
+  }
+
+      .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
 
   /* MAIN SECTION */
+
+  .main
+  {
+    margin-top: 40px;
+  }
     .main-left {
       width: 318px;
       margin: -212px 0 0 -161px;
@@ -1070,7 +1177,7 @@ li > .menu:before {
 @media only screen and (min-width: 480px) and (max-width: 767px){ 
   
   /* HEADER SECTION */
-    .header-logo img {
+  /*  .header-logo img {
       position: absolute;
       width: 183px;
       height: 44px;
@@ -1092,10 +1199,46 @@ li > .menu:before {
       top: 20px;
       font-size: 90%;
       text-align: left;
-    }
+    }*/
+      .header
+  {
+    height: 50px;
+  }
+
+      .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
 
 
   /* MAIN SECTION */
+
+  .main
+  {
+    margin-top: 40px;
+  }
     .main-left {
       margin: -212px 0 0 -252px;
       z-index: 3;
@@ -1340,7 +1483,7 @@ li > .menu:before {
 @media only screen and (min-width: 768px) and (max-width: 991px){ 
   
   /* HEADER SECTION */
-    .header-logo img {
+    /*.header-logo img {
       position: absolute;
       width: 222px;
       height: 45px;
@@ -1361,9 +1504,46 @@ li > .menu:before {
     .header-menu ul ul {
       top: 24px;
       font-size: 80%;
-    }
+    }*/
+
+  .header
+  {
+    height: 50px;
+  }
+
+      .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
 
   /* MAIN SECTION */
+  .main
+  {
+    margin-top: 40px;
+  }
+
     .main-left {
       width: 350px;
       margin: -212px 0 0 -375px;
