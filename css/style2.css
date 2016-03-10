@@ -53,6 +53,53 @@ html, body {
   top: 11.5px;
 }
 
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    float: right;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav li.hidden a {
+  width: 220px;
+  display: none;
+}
+
+.topnav li.hidden a:after {
+  font-family: FontAwesome;
+  content: '\f0c9';
+  text-align: right;
+  float: right;
+}
+
+.topnav li a {
+  display: block;
+  float: left;
+  padding: 8px 16px 4px 16px;
+  color: #53453d;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4em;
+  border-right: 1px #CECAC8 solid;
+}
+
+.topnav li:last-child a {
+  border-right: none;
+}
+
+.topnav .menu li a:hover {
+  font-weight: bolder;
+  color: white;
+  background-color: #87CEEB;
+}
+
+/*
 .header-menu {
   position: absolute;
   font-size: 1.2em;
@@ -101,7 +148,7 @@ html, body {
   content: '\f0c9';
   margin-right: 5px;
 }
-
+*/
 .wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -473,6 +520,7 @@ html, body {
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
+  z-index: 9999;
 }
 
 .learn .modal-content {
@@ -652,6 +700,21 @@ html, body {
   }
 
 
+@media only screen and (max-width: 1350px) {
+  .learn .modal {
+    padding-top: 5px;  
+  }
+
+  .learn .modal-body input, 
+  .learn .modal-body textarea {
+    height: 50%;
+    font-size: 100%;
+  }    
+
+  .learn .modal-body textarea {
+    height: 125px;
+  }
+}
 
   /* iPhone 6 Plus and smaller */
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
@@ -671,6 +734,37 @@ html, body {
   .header-logo > a > img
   {
     height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
   }
 
   .menu-btn
@@ -885,6 +979,29 @@ html, body {
     margin: 0 auto;
   }
 
+  .learn .modal-header h2 {
+    font-size: 213%;
+    padding-left: 13px;
+  }
+
+  .learn .modal-body {
+    height: 450px;
+  }
+
+  .learn .moda-body form {
+    margin: 20px 0 30px 21px;
+  }
+
+  .learn .modal-body .submit {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: 208px 0 0 -66px;
+    padding: 0;
+  }
+
   /* contact us section */
   .contact table tr th div
   {
@@ -947,6 +1064,37 @@ html, body {
   .header-logo > a > img
   {
     height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
   }
 
   .menu-btn
@@ -1173,6 +1321,29 @@ html, body {
     width: 100%;
   }
 
+  .learn .modal-header h2 {
+    font-size: 213%;
+    padding-left: 13px;
+  }
+
+  .learn .modal-body {
+    height: 450px;
+  }
+
+  .learn .moda-body form {
+    margin: 20px 0 30px 21px;
+  }
+
+  .learn .modal-body .submit {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: 208px 0 0 -66px;
+    padding: 0;
+  }
+
   /* contact us section */
   .contact table tr th div
   {
@@ -1221,7 +1392,7 @@ html, body {
     height: 50px;
   }
 
-      .header-logo
+  .header-logo
   {
     top: 7.5px;
     left: 10px;
@@ -1230,6 +1401,37 @@ html, body {
   .header-logo > a > img
   {
     height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
   }
 
   .menu-btn
@@ -1498,7 +1700,28 @@ html, body {
  }
 
   /* Widescreens */
-@media only screen and (min-width: 992px){ 
+@media only screen and (min-width: 992px) and (max-width: 1420px){ 
+  /* Enter code here */
+  .topnav {
+    padding-top: 35px;
+  }
+
+  .topnav li a {
+    padding: 4px 9px 2px 9px;
+    font-size: 1.25em;
+  }
+
+  .learn table tr:nth-child(7) td div {
+    margin-bottom: 27px;
+  }
+
+  .contact table tr:nth-child(2) td:nth-child(2) div {
+    width: 400px;
+  }
+}
+
+ /* The rest */
+@media only screen and (min-width: 1421px) {
   /* Enter code here */
   .learn table tr:nth-child(7) td div {
     margin-bottom: 27px;

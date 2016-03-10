@@ -25,16 +25,16 @@
             <a href="index.html"><img src="img/logo.png" /></a>
           </div>
 
-          <div class="header-menu">
-            <button class="menu-btn">Menu</button>
-            <div class="menu-content">
-              <a href="#about">About Us</a>
-              <a href="#protocol">Avena Bulk Ingredients</a>
-              <a href="#protocol-sub">Avena Purity Protocol</a>
-              <a href="#learn">Learning Centre</a>
-              <a href="#contact">Contact Us</a>
+           <ul class="topnav">
+            <li class="hidden"><a href="#"></a></li>
+            <div class="menu">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#bulk">Avena Bulk Ingredients</a></li>
+              <li><a href="#protocol-sub">Avena Purity Protocol</a></li>
+              <li><a href="#learn">Learning Centre</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </div>
-          </div>        
+           </ul>      
       </header>
       
       <section class="news">
@@ -180,7 +180,7 @@
 
       </section>
 
-      <section id="protocol-sub" class="protocol-sub"><a href="css/pdf/AVENA_Content_Purity_Protocol.pdf" target="_blank"><img src="img/infographic3_web.jpg" width="1030" height="613.5"/></a></section>
+      <section id="protocol-sub" class="protocol-sub"><a href="css/pdf/AVENA_Content_Purity_Protocol_Rev.pdf" target="_blank"><img src="img/infographic3_web.jpg" width="1030" height="613.5"/></a></section>
       
       
       <section id="learn" class="learn">
@@ -200,7 +200,7 @@
               <td><div><i class="fa fa-circle"></i><a href="css/pdf/AVENA_Content_Learning_Centre_Celiac_Disease.pdf" target="_blank"> Celiac Disease</a></div></td>
             </tr>
             <tr>
-              <td><div><i class="fa fa-circle"></i><a href="css/pdf/AVENA_Content_Purity_Protocol.pdf" target="_blank"> Avena Purity Protocol</a></div></td>
+              <td><div><i class="fa fa-circle"></i><a href="css/pdf/AVENA_Content_Purity_Protocol_Rev.pdf" target="_blank"> Avena Purity Protocol</a></div></td>
             </tr>
             <tr>
               <td><div><i class="fa fa-circle"></i> Avena Ingredient Tracker<br><small>Coming soon!</small></div></td>
@@ -228,8 +228,8 @@
             </div>
             
             <div class="modal-body">
-
-              <form action="" method="post">
+              <form action="learn.php" method="post">
+                <input type="hidden" name="destination" value="<?php echo $_SERVER["REQUEST_URI"]; ?>">
                 <input type="text" id="input-name" name="name" placeholder="Name" required>
                 <input type="email" id="input-email" name="email" placeholder="Email address" required>
                 <input type="text" id="input-subject" name="subject" placeholder="Subject">

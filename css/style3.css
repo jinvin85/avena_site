@@ -139,6 +139,53 @@ html, body {
   word-wrap: break-word;
 }
 
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    float: right;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav li.hidden a {
+  width: 220px;
+  display: none;
+}
+
+.topnav li.hidden a:after {
+  font-family: FontAwesome;
+  content: '\f0c9';
+  text-align: right;
+  float: right;
+}
+
+.topnav li a {
+  display: block;
+  float: left;
+  padding: 8px 16px 4px 16px;
+  color: #53453d;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4em;
+  border-right: 1px #CECAC8 solid;
+}
+
+.topnav li:last-child a {
+  border-right: none;
+}
+
+.topnav .menu li a:hover {
+  font-weight: bolder;
+  color: white;
+  background-color: #87CEEB;
+}
+
+/*
 .menu-btn {
     font-family: Rockwell;
     background: white;
@@ -178,7 +225,7 @@ html, body {
   content: '\f0c9';
   margin-right: 5px;
 }
-
+*/
 /* MAIN SECTION */
 .main-top {
   height: 5px;
@@ -571,6 +618,7 @@ html, body {
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
+  z-index: 9999;
 }
 
 .info .modal-content {
@@ -773,6 +821,37 @@ html, body {
   .header-logo > a > img
   {
     height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
   }
 
   .menu-btn
@@ -1026,7 +1105,7 @@ html, body {
     }
 
     .info .modal-body {
-      heigh: 450px;
+      height: 450px;
     }
 
     .info .moda-body form {
@@ -1108,6 +1187,37 @@ html, body {
   .header-logo > a > img
   {
     height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
   }
 
   .menu-btn
@@ -1334,7 +1444,7 @@ html, body {
     }
 
     .info .modal-body {
-      heigh: 450px;
+      height: 450px;
     }
 
     .info .moda-body form {
@@ -1414,6 +1524,37 @@ html, body {
   .header-logo > a > img
   {
     height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
   }
 
   .menu-btn
@@ -1562,3 +1703,16 @@ html, body {
     }
 
  }
+
+ /* Widescreens */
+@media only screen and (min-width: 992px) and (max-width: 1420px){ 
+  /* Enter code here */
+  .topnav {
+    padding-top: 35px;
+  }
+
+  .topnav li a {
+    padding: 4px 9px 2px 9px;
+    font-size: 1.25em;
+  }
+}

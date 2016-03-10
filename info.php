@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
   if (headers_sent()) {
   	die("Redirect failed.");
   } else {
-  	exit(header("Location: bulk.html"));
+  	exit(header("Location: oats.html"));
   }
 
 ?>
