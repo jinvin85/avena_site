@@ -179,6 +179,11 @@ body
 /* Hero header */
 .box1
 {
+  -webkit-flex:1;
+  -webkit-box-flex:1;
+  -moz-flex:1;
+  -moz-box-flex:1;
+  -ms-flex:1;
   flex:1;
   min-height: 550px;
   /* turn flex item into flex wrapper */
@@ -389,6 +394,11 @@ body
 /* Avena Foods Box */
 .box2
 {
+  -webkit-flex:1;
+  -webkit-box-flex:1;
+  -moz-flex:1;
+  -moz-box-flex:1;
+  -ms-flex:1;
   flex: 1;
   /*background-color: yellow;*/
   background:url('../img/bg_v2_avena_web.jpg') no-repeat 30% 61%;
@@ -398,6 +408,11 @@ body
 /* Only Oats Box */
 .box3
 {
+  -webkit-flex:1;
+  -webkit-box-flex:1;
+  -moz-flex:1;
+  -moz-box-flex:1;
+  -ms-flex:1;
   flex: 1;
   /*background-color: green;*/
   background:url('../img/bg_v2_oats_web.jpg') no-repeat 90% 60%;

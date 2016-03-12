@@ -403,6 +403,10 @@ html, body {
 }
 
 .products-top .sub {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
 }
@@ -987,11 +991,19 @@ html, body {
     }
 
     .products-top .products-table tbody {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       padding: 0;
     } 
 
     .products-top .products-table tr td {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex: column nowrap;
     }
@@ -1341,11 +1353,19 @@ html, body {
     }
 
     .products-top .products-table tbody {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       padding: 0;
     } 
 
     .products-top .products-table tr td {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex: column nowrap;
     }
