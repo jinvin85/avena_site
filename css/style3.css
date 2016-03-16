@@ -589,6 +589,11 @@ html, body {
   line-height: 1.3em;
 }
 
+.info .wrapper .left ul li:nth-child(5) {
+  padding-top: 0.4em;
+  line-height: 1em;
+}
+
 .info .wrapper .left ul li span,
 .info .wrapper .right ul li span {
   position: relative;
@@ -1096,7 +1101,7 @@ html, body {
 
     .info .wrapper .right {
       left: 50%;
-      top: 70.32877%;
+      top: 75.32877%;
       font-size: 128.61538%;
     }
 
@@ -1447,9 +1452,13 @@ html, body {
       font-size: 140.61538%;
     }
 
+    .info .wrapper .left ul li:nth-child(5) {
+      padding-top: 0.2em;
+    }
+
     .info .wrapper .right {
       left: 52%;
-      top: 74.32877%;
+      top: 79.32877%;
       font-size: 140.61538%;
     }
 
