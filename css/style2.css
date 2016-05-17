@@ -99,56 +99,6 @@ html, body {
   background-color: #87CEEB;
 }
 
-/*
-.header-menu {
-  position: absolute;
-  font-size: 1.2em;
-  font-weight: bold;
-  right: 60px;
-  top: 8px;
-  word-wrap: break-word;
-}
-
-.menu-btn {
-    font-family: Rockwell;
-    background: white;
-    color: #53453d;
-    padding: 20px;
-    font-size: 1.3em;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    font-size: 1em;
-    top: 68px;
-}
-
-.menu-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.menu-content a:hover {background-color: #f1f1f1}
-
-.header-menu:hover .menu-content {
-    display: block;
-}
-
-.menu-btn:before 
-{
-  font-family: FontAwesome;
-  content: '\f0c9';
-  margin-right: 5px;
-}
-*/
 .wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -165,12 +115,10 @@ html, body {
 .news {
   position: relative;
   margin-top: 80px;
-  /*background-color: gold;*/
-  /*height: 6.90032%;*/
   height: 305px;
-  background-image: url('../img/news.jpg');
+  background-image: url('../img/bulk/news.jpg');
   background-repeat: no-repeat;
-  /*background-size: 1800px;*/ background-size: cover;
+  background-size: cover;
   background-position: 77% 53%;
   z-index: -1; 
 }
@@ -178,27 +126,27 @@ html, body {
 .about {
   position: relative;
   background-color: green;
-  /*height: 16.49289%;*/ height: 730px;
-  background-image: url('../img/about.jpg');
+  height: 730px;
+  background-image: url('../img/bulk/about.jpg');
   background-repeat: no-repeat;
-  /*background-size: 1235px; */ background-size: cover;
-  /*background-position: 6% 75%;*/ background-position: 6% 45%;
+  background-size: cover;
+  background-position: 6% 45%;
 }
 
 .bulk {
   background-color: pink;
-  /*height: 10.61304%;*/ height: 520px;
-  background-image: url('../img/bulk.jpg');
+  height: 520px;
+  background-image: url('../img/bulk/bulk.jpg');
   background-repeat: no-repeat;
-  /*background-size: 1400px; */ background-size: 100%;
-  /*background-position: 45% 43%;*/ background-position: 45% 45%;
+  background-size: 100%;
+  background-position: 45% 45%;
 }
 
 .protocol {
   position: relative;
   background-color: grey;
-  /*height: 24.98452%;*/ height: 1092.3px;
-  background-image: url('../img/protocol.jpg');
+  height: 1092.3px;
+  background-image: url('../img/bulk/protocol.jpg');
   background-repeat: no-repeat;
   background-size: 2350px; 
   background-position: 35% 0%;
@@ -206,7 +154,7 @@ html, body {
 
   /* for protocol bg fix */
 @media only screen and (min-width: 2000px){ 
-  /* Enter code here */
+
   .protocol
   {
     background-size: 3500px;
@@ -218,7 +166,7 @@ html, body {
 .protocol-sub {
   position: relative;
   background-color: #fffbf2;
-  /*height: 13.98452%;*/ height: 693.5px;
+  height: 693.5px;
 }
 
 .protocol-sub a {
@@ -229,20 +177,17 @@ html, body {
 }
 
 .protocol-sub img {
-  /*overflow: hidden;*/
+  
   position: absolute;
   width: 1030px;
   height: 613.5px;
-  /*left: 50%;
-  right: 50%;
-  margin: 0px 0 0 -515px;*/
 }
 
 .learn {
   position: relative;
   background-color: skyblue;
-  /*height: 15.98452%;*/ height: 687.6px;
-  background-image: url('../img/learn.jpg');
+  height: 687.6px;
+  background-image: url('../img/bulk/learn.jpg');
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: 100% 38%;
@@ -251,10 +196,10 @@ html, body {
 .contact {
   position: relative;
   background-color: blue;
-  /*height: 9.15920%;*/ height: 396.25px;
-  background-image: url('../img/contact.jpg');
+  height: 396.25px;
+  background-image: url('../img/bulk/contact.jpg');
   background-repeat: no-repeat;
-  /*background-size: 1160px; */ background-size: cover;
+  background-size: cover;
   background-position: 47% 53%;
 }
 
@@ -312,7 +257,7 @@ html, body {
   top: 43.68085%;
   left: 6.33333%;
   right: 50%;
-  width: 50%;
+  width: 80%;
 }
 
 .about table, th, td {
@@ -373,12 +318,10 @@ html, body {
 
 /* PROTOCOL SECTION */
 .protocol .top {
-  /*position: absolute;*/ position: relative;
+  position: relative;
   width: 800px;
   height: 524px;
-  /*left: 50%;
-  top: 50%;*/
-  /*margin: -550px 0 0 -420px;*/ margin: 0 auto;
+  margin: 0 auto;
 }
 
 .protocol .top ul {
@@ -443,6 +386,11 @@ html, body {
 .protocol .heart table tr img {
   width: 125;
   height: 125px;
+}
+
+.protocol .moreInfo {
+  font-size: 0.9em;
+  line-height: 2;
 }
 
 /* LEARN SECTION */
@@ -719,7 +667,6 @@ html, body {
 
   /* iPhone 6 Plus and smaller */
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
-  /* Enter code here */
 
   .header
   {
@@ -790,6 +737,7 @@ html, body {
   {
     margin-top: 50px;
     background-position: 50% 100%;
+    background-image: url('../img/bulk/news_mobile.jpg');
   }
 
   .news .news-gather {
@@ -828,6 +776,11 @@ html, body {
 
   /* about us section */
 
+  .about
+  {
+    background-image: url('../img/bulk/about_mobile.jpg');
+  }
+
   .about, .learn, .contact
   {
     height: 430px;
@@ -861,6 +814,7 @@ html, body {
     height: 240px;
     background-size: 480px;
     background-position: 50% 23%;
+    background-image: url('../img/bulk/bulk_mobile.jpg');
   }
 
   .bulk p
@@ -880,6 +834,7 @@ html, body {
     height: 550px;
     background-size: cover;
     background-position: 0% 50%;
+    background-image: url('../img/bulk/protocol_mobile.jpg');
   }
 
   .protocol .top
@@ -915,6 +870,13 @@ html, body {
   .protocol .heart
   {
     display: none;
+  }
+
+  .protocol .moreInfo {
+    font-size: 0.9em;
+    padding: 20px 0px;
+    line-height: 1.6;
+    width: 300px;
   }
 
   /* protocol sub section */
@@ -1004,6 +966,12 @@ html, body {
   }
 
   /* contact us section */
+
+  .contact
+  {
+    background-image: url('../img/bulk/contact_mobile.jpg');
+  }
+
   .contact table tr th div
   {
     line-height: 2em;
@@ -1027,7 +995,6 @@ html, body {
     
   .contact-us  tr{
         display:block;
-        /*margin-bottom:30px;*/
     }
 
     .contact table tr td:nth-child(1)
@@ -1050,7 +1017,7 @@ html, body {
 
   /* Regular iPad and iPad mini or other tablets */
 @media only screen and (min-width: 480px) and (max-width: 767px){ 
-  /* Enter code here */
+
   .header
   {
     height: 50px;
@@ -1120,6 +1087,7 @@ html, body {
   {
     margin-top: 50px;
     background-position: 50% 50%;
+      background-image: url('../img/bulk/news_mobile.jpg');
   }
 
   .news .news-gather {
@@ -1157,6 +1125,11 @@ html, body {
   }
 
   /* about us section */
+
+  .about
+  {
+    background-image: url('../img/bulk/about_mobile.jpg');
+  }
 
   .about, .learn, .contact
   {
@@ -1201,6 +1174,7 @@ html, body {
     height: 240px;
     background-size: cover;
     background-position: 50% 40%;
+    background-image: url('../img/bulk/bulk_mobile.jpg');
   }
 
   .bulk p
@@ -1220,6 +1194,7 @@ html, body {
     height: 340px;
     background-size: 1000px;
     background-position: 20% 50%;
+    background-image: url('../img/bulk/protocol_mobile.jpg');
   }
 
   .protocol .top
@@ -1256,6 +1231,13 @@ html, body {
   .protocol .heart
   {
     display: none;
+  }
+
+  .protocol .moreInfo {
+    font-size: 0.9em;
+    padding: 20px 0px;
+    line-height: 1.6;
+    width: 372px;
   }
 
   /* protocol sub section */
@@ -1346,6 +1328,12 @@ html, body {
   }
 
   /* contact us section */
+
+  .contact
+  {
+    background-image: url('../img/bulk/contact_mobile.jpg');
+  }
+
   .contact table tr th div
   {
     line-height: 2em;
@@ -1387,7 +1375,7 @@ html, body {
 
  /* Laptops and small browsers */
 @media only screen and (min-width: 768px) and (max-width: 991px){ 
-  /* Enter code here */
+
   .header
   {
     height: 50px;
@@ -1457,6 +1445,7 @@ html, body {
   {
     margin-top: 50px;
     background-position: 50% 50%;
+      background-image: url('../img/bulk/news_mobile.jpg');
   }
 
   .news .news-gather {
@@ -1494,6 +1483,11 @@ html, body {
   }
 
   /* about us section */
+
+  .about
+  {
+    background-image: url('../img/bulk/about_mobile.jpg');
+  }
 
   .about, .learn, .contact
   {
@@ -1538,6 +1532,7 @@ html, body {
     height: 240px;
     background-size: cover;
     background-position: 50% 40%;
+    background-image: url('../img/bulk/bulk_mobile.jpg');
   }
 
   .bulk p
@@ -1557,6 +1552,7 @@ html, body {
     height: 340px;
     background-size: 1000px;
     background-position: 20% 50%;
+    background-image: url('../img/bulk/protocol_mobile.jpg');
   }
 
   .protocol .top
@@ -1593,6 +1589,13 @@ html, body {
   .protocol .heart
   {
     display: none;
+  }
+
+  .protocol .moreInfo {
+    font-size: 0.9em;
+    padding: 20px 0px;
+    line-height: 1.6;
+    width: 372px;
   }
 
   /* protocol sub section */
@@ -1660,6 +1663,12 @@ html, body {
   }
 
   /* contact us section */
+
+  .contact
+  {
+    background-image: url('../img/bulk/contact_mobile.jpg');
+  }
+  
   .contact table tr th div
   {
     line-height: 2em;
@@ -1683,7 +1692,6 @@ html, body {
     
   .contact-us  tr{
         display:block;
-        /*margin-bottom:30px;*/
     }
 
   .social_wrapper
@@ -1702,7 +1710,7 @@ html, body {
 
   /* Widescreens */
 @media only screen and (min-width: 992px) and (max-width: 1420px){ 
-  /* Enter code here */
+
   .topnav {
     padding-top: 35px;
   }
@@ -1723,12 +1731,64 @@ html, body {
 
  /* The rest */
 @media only screen and (min-width: 1421px) {
-  /* Enter code here */
+
   .learn table tr:nth-child(7) td div {
     margin-bottom: 27px;
   }
 
   .contact table tr:nth-child(2) td:nth-child(2) div {
     width: 400px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  .about-us table tr:nth-child(4) td div {
+    height: 60px;
+  }
+
+  .about-us table tr:nth-child(4) span:nth-child(2) {
+    margin-left: 59px;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  .about-us table tr:nth-child(4) td div br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .about-us table tr:nth-child(4) td div span:nth-child(1) {
+    margin-left: 58px;
+  }
+
+  .about-us table tr:nth-child(4) td div span:nth-child(2) {
+    margin-left: 0 !important;
+  }
+
+  .about-us table tr:nth-child(4) td div br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .about-us table tr:nth-child(4) td div {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .about-us table tr:nth-child(3) td div {
+    height: 60px;
+  }
+  
+  .about-us table tr:nth-child(3) td div span {
+    margin-left: 58px;
+  }
+}
+
+@media only screen and (min-width: 427px) {
+  .about-us table tr:nth-child(3) td div br {
+    display: none;
   }
 }
